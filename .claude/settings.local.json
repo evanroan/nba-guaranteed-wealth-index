@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 fetch_stats.py 2>&1)",
+      "Bash(python3 -c \"\nimport pandas as pd\ndf = pd.read_csv\\('/Users/evan/nba-dashboard/players.csv'\\)\nprint\\(df[['name','contractYear','salary','T1_PER','T_PER','T2_PER','T1_PTS','T_PTS','T2_PTS','T1_TS','T_TS','T2_TS']].to_string\\(index=False\\)\\)\n\")",
+      "Bash(npm run dev 2>&1)"
+    ]
+  }
+}
