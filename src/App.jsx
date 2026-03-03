@@ -221,6 +221,58 @@ const STYLE = `
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
   .flag-row { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+
+  /* ── Mobile sidebar toggle ─────────────────────────────────────── */
+  .menu-btn {
+    display: none; background: none; border: 1px solid var(--border);
+    color: var(--muted); cursor: pointer; padding: 5px 9px; font-size: 18px;
+    border-radius: 2px; line-height: 1; align-self: center; flex-shrink: 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  .menu-btn:hover { border-color: var(--amber); color: var(--amber); }
+
+  .sidebar-mobile-header {
+    display: none; align-items: center; justify-content: space-between;
+    padding: 12px 16px; border-bottom: 1px solid var(--border); flex-shrink: 0;
+  }
+  .sidebar-close-btn {
+    background: none; border: 1px solid var(--border); color: var(--muted);
+    cursor: pointer; width: 28px; height: 28px; font-size: 18px;
+    border-radius: 2px; display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace; line-height: 1;
+  }
+  .sidebar-close-btn:hover { border-color: var(--amber); color: var(--amber); }
+
+  @media (max-width: 767px) {
+    .menu-btn { display: flex; }
+    .sidebar-mobile-header { display: flex; }
+
+    .header { padding: 12px 16px; }
+    .header-title { font-size: 26px; letter-spacing: 2px; }
+
+    .layout { grid-template-columns: 1fr; }
+
+    .sidebar {
+      position: fixed; top: 0; left: 0; bottom: 0;
+      width: 300px; z-index: 200;
+      transform: translateX(-320px);
+      transition: transform 0.25s ease;
+      display: flex; flex-direction: column;
+      overflow-y: auto;
+    }
+    .sidebar.open { transform: translateX(0); }
+
+    .main { padding: 16px 14px; }
+
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+
+    .charts-grid { grid-template-columns: 1fr; }
+    .chart-full { grid-column: span 1; }
+
+    .detail-grid { grid-template-columns: 1fr; }
+    .detail-header { flex-direction: column; gap: 10px; }
+    .risk-meter { text-align: left; }
+  }
   .flag {
     padding: 3px 8px; border-radius: 2px; font-size: 9px; letter-spacing: 1px;
     font-weight: 600;
@@ -306,6 +358,7 @@ export default function App() {
   const [tierFilter, setTierFilter] = useState("ALL");
   const [ageFilter, setAgeFilter] = useState("ALL");
   const [activeTab, setActiveTab] = useState("OVERVIEW");
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const filtered = useMemo(() => DATA.filter(p =>
     (tierFilter === "ALL" || p.tier === tierFilter) &&
@@ -387,6 +440,7 @@ export default function App() {
 
       {/* HEADER */}
       <div className="header">
+        <button className="menu-btn" onClick={() => setSidebarOpen(o => !o)}>☰</button>
         <div>
           <div className="header-title">GUARANTEED <span>WEALTH</span> INDEX</div>
           <div className="header-sub">NBA Contract Moral Hazard & Performance Risk Dashboard · 2010–2025</div>
@@ -399,9 +453,20 @@ export default function App() {
         </div>
       </div>
 
+      {sidebarOpen && (
+        <div
+          style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 199 }}
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
       <div className="layout">
         {/* SIDEBAR */}
-        <div className="sidebar">
+        <div className={`sidebar${sidebarOpen ? " open" : ""}`}>
+          <div className="sidebar-mobile-header">
+            <span style={{ fontSize: 10, letterSpacing: 2, color: "var(--muted)", textTransform: "uppercase" }}>Filters</span>
+            <button className="sidebar-close-btn" onClick={() => setSidebarOpen(false)}>×</button>
+          </div>
           <div className="sidebar-section">
             <div className="section-label">Contract Tier</div>
             <div className="filter-row">
@@ -424,7 +489,7 @@ export default function App() {
                 <div
                   key={p.id}
                   className={`player-row ${selectedId === p.id ? "selected" : ""}`}
-                  onClick={() => setSelectedId(p.id)}
+                  onClick={() => { setSelectedId(p.id); setSidebarOpen(false); }}
                 >
                   <div className="risk-badge" style={{
                     background: `${riskColor(p.riskScore)}18`,
