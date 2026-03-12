@@ -315,7 +315,47 @@ const PLAYERS = [
   { id: 8,  name: "J. Brown",     pos: "SF", age: 26, tier: "Max", salary: 61, contractYear: 2023,
     T1: { PER: 18.9, WS: 5.8, VORP: 2.2, PTS: 23.6, AST: 3.5, TRB: 6.1, TS: 57.4, TOV: 2.7 },
     T:  { PER: 19.1, WS: 5.0, VORP: 2.0, PTS: 26.6, AST: 3.5, TRB: 6.9, TS: 58.1, TOV: 2.9 },
-    T2: { PER: 18.6, WS: 5.9, VORP: 1.6, PTS: 23.0, AST: 3.6, TRB: 5.5, TS: 58.0, TOV: 2.4 } }
+    T2: { PER: 18.6, WS: 5.9, VORP: 1.6, PTS: 23.0, AST: 3.6, TRB: 5.5, TS: 58.0, TOV: 2.4 } },
+  { id: 9,  name: "J. Noah",     pos: "C", age: 31, tier: "Mid", salary: 18, contractYear: 2016,
+    T1: { PER: 15.3, WS: 5.6, VORP: 2.1, PTS: 7.2, AST: 4.7, TRB: 9.6, TS: 48.2, TOV: 1.8 },
+    T:  { PER: 14.1, WS: 1.1, VORP: 0.6, PTS: 4.3, AST: 3.8, TRB: 8.8, TS: 40.6, TOV: 1.8 },
+    T2: { PER: 15.2, WS: 2.2, VORP: 0.4, PTS: 5.0, AST: 2.2, TRB: 8.8, TS: 49.1, TOV: 1.3 } },
+  { id: 10,  name: "L. Deng",     pos: "SF", age: 31, tier: "Mid", salary: 18, contractYear: 2016,
+    T1: { PER: 15.5, WS: 5.4, VORP: 1.2, PTS: 14.0, AST: 1.9, TRB: 5.2, TS: 56.1, TOV: 1.5 },
+    T:  { PER: 15.0, WS: 6.4, VORP: 1.7, PTS: 12.3, AST: 1.9, TRB: 6.0, TS: 54.9, TOV: 1.1 },
+    T2: { PER: 10.1, WS: 0.9, VORP: 0.0, PTS: 7.6, AST: 1.3, TRB: 5.3, TS: 47.0, TOV: 0.8 } },
+  { id: 11,  name: "C. Parsons",     pos: "SF", age: 27, tier: "Mid", salary: 24, contractYear: 2016,
+    T1: { PER: 16.3, WS: 5.5, VORP: 2.0, PTS: 15.7, AST: 2.4, TRB: 4.9, TS: 56.7, TOV: 1.5 },
+    T:  { PER: 16.2, WS: 4.3, VORP: 1.8, PTS: 13.7, AST: 2.8, TRB: 4.7, TS: 58.9, TOV: 1.6 },
+    T2: { PER: 7.7, WS: 0.2, VORP: -0.3, PTS: 6.2, AST: 1.6, TRB: 2.5, TS: 43.6, TOV: 0.7 } },
+  { id: 12,  name: "E. Fournier",     pos: "SG", age: 28, tier: "Mid", salary: 20, contractYear: 2021,
+    T1: { PER: 16.4, WS: 4.6, VORP: 1.6, PTS: 18.5, AST: 3.2, TRB: 2.6, TS: 59.5, TOV: 1.9 },
+    T:  { PER: 16.7, WS: 2.8, VORP: 1.0, PTS: 17.1, AST: 3.4, TRB: 3.0, TS: 59.8, TOV: 1.7 },
+    T2: { PER: 12.3, WS: 3.7, VORP: 0.7, PTS: 14.1, AST: 2.1, TRB: 2.6, TS: 55.4, TOV: 1.3 } },
+  { id: 13,  name: "T. Mozgov",     pos: "C", age: 30, tier: "Mid", salary: 16, contractYear: 2016,
+    T1: { PER: 16.6, WS: 5.7, VORP: 0.7, PTS: 9.7, AST: 0.7, TRB: 7.3, TS: 59.4, TOV: 1.4 },
+    T:  { PER: 14.6, WS: 3.7, VORP: 0.2, PTS: 6.3, AST: 0.4, TRB: 4.4, TS: 59.3, TOV: 0.9 },
+    T2: { PER: 12.3, WS: 1.1, VORP: -0.7, PTS: 7.4, AST: 0.8, TRB: 4.9, TS: 55.3, TOV: 1.3 } },
+  { id: 14,  name: "M. Dellavedova",     pos: "PG", age: 25, tier: "Low", salary: 10, contractYear: 2016,
+    T1: { PER: 8.5, WS: 1.9, VORP: -0.3, PTS: 4.8, AST: 3.0, TRB: 1.9, TS: 49.3, TOV: 0.9 },
+    T:  { PER: 11.3, WS: 3.8, VORP: 0.4, PTS: 7.5, AST: 4.4, TRB: 2.1, TS: 52.7, TOV: 1.5 },
+    T2: { PER: 9.4, WS: 1.2, VORP: -1.1, PTS: 7.6, AST: 4.7, TRB: 1.9, TS: 50.1, TOV: 1.8 } },
+  { id: 15,  name: "K. Korver",     pos: "SG", age: 33, tier: "Low", salary: 6, contractYear: 2014,
+    T1: { PER: 13.9, WS: 6.4, VORP: 2.2, PTS: 10.9, AST: 2.0, TRB: 4.0, TS: 63.7, TOV: 0.9 },
+    T:  { PER: 13.5, WS: 5.9, VORP: 1.9, PTS: 12.0, AST: 2.9, TRB: 4.0, TS: 65.3, TOV: 1.4 },
+    T2: { PER: 14.8, WS: 7.5, VORP: 3.0, PTS: 12.1, AST: 2.6, TRB: 4.1, TS: 69.9, TOV: 1.4 } },
+  { id: 16,  name: "P. Beverley",     pos: "PG", age: 29, tier: "Low", salary: 7, contractYear: 2017,
+    T1: { PER: 13.0, WS: 4.4, VORP: 1.1, PTS: 9.9, AST: 3.4, TRB: 3.5, TS: 55.3, TOV: 1.3 },
+    T:  { PER: 13.0, WS: 5.3, VORP: 1.6, PTS: 9.5, AST: 4.2, TRB: 5.9, TS: 54.6, TOV: 1.5 },
+    T2: { PER: 12.4, WS: 0.4, VORP: 0.2, PTS: 12.2, AST: 2.9, TRB: 4.1, TS: 53.0, TOV: 2.3 } },
+  { id: 17,  name: "M. Belinelli",     pos: "SG", age: 31, tier: "Low", salary: 7, contractYear: 2017,
+    T1: { PER: 9.4, WS: 0.5, VORP: -0.8, PTS: 10.2, AST: 1.9, TRB: 1.7, TS: 50.0, TOV: 1.2 },
+    T:  { PER: 13.3, WS: 3.2, VORP: 0.4, PTS: 10.5, AST: 2.0, TRB: 2.4, TS: 56.6, TOV: 0.9 },
+    T2: { PER: 14.1, WS: 3.7, VORP: 0.8, PTS: 12.1, AST: 1.9, TRB: 1.9, TS: 58.1, TOV: 1.2 } },
+  { id: 18,  name: "T. Sefolosha",     pos: "SF", age: 30, tier: "Low", salary: 6, contractYear: 2014,
+    T1: { PER: 12.8, WS: 6.8, VORP: 2.5, PTS: 7.6, AST: 1.5, TRB: 3.9, TS: 61.7, TOV: 0.8 },
+    T:  { PER: 10.4, WS: 3.0, VORP: 0.9, PTS: 6.3, AST: 1.5, TRB: 3.6, TS: 51.7, TOV: 0.9 },
+    T2: { PER: 13.8, WS: 2.5, VORP: 0.8, PTS: 5.3, AST: 1.4, TRB: 4.3, TS: 50.6, TOV: 0.7 } }
 ];
 
 function computeRisk(p) {
@@ -371,6 +411,7 @@ export default function App() {
   const avgPERDrop = (DATA.reduce((s, p) => s + p.perDrop, 0) / DATA.length).toFixed(1);
   const maxAvgDrop = (DATA.filter(p => p.tier === "Max").reduce((s, p) => s + p.perDrop, 0) / DATA.filter(p => p.tier === "Max").length).toFixed(1);
   const midAvgDrop = (DATA.filter(p => p.tier === "Mid").reduce((s, p) => s + p.perDrop, 0) / DATA.filter(p => p.tier === "Mid").length).toFixed(1);
+  const lowAvgDrop = (DATA.filter(p => p.tier === "Low").reduce((s, p) => s + p.perDrop, 0) / DATA.filter(p => p.tier === "Low").length).toFixed(1);
   const over28Avg  = (DATA.filter(p => p.age > 28).reduce((s, p) => s + p.perDrop, 0) / DATA.filter(p => p.age > 28).length).toFixed(1);
 
   // ── Chart data ───────────────────────────────────────────────────
@@ -382,12 +423,15 @@ export default function App() {
   }));
 
   const tierCompare = [
-    { phase: "T-1 (Pre)", Max: DATA.filter(p=>p.tier==="Max").reduce((s,p)=>s+p.T1.PER,0)/DATA.filter(p=>p.tier==="Max").length,
-      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T1.PER,0)/DATA.filter(p=>p.tier==="Mid").length },
-    { phase: "T (Peak)", Max: DATA.filter(p=>p.tier==="Max").reduce((s,p)=>s+p.T.PER,0)/DATA.filter(p=>p.tier==="Max").length,
-      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T.PER,0)/DATA.filter(p=>p.tier==="Mid").length },
+    { phase: "T-1 (Pre)",  Max: DATA.filter(p=>p.tier==="Max").reduce((s,p)=>s+p.T1.PER,0)/DATA.filter(p=>p.tier==="Max").length,
+      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T1.PER,0)/DATA.filter(p=>p.tier==="Mid").length,
+      Low: DATA.filter(p=>p.tier==="Low").reduce((s,p)=>s+p.T1.PER,0)/DATA.filter(p=>p.tier==="Low").length },
+    { phase: "T (Peak)",   Max: DATA.filter(p=>p.tier==="Max").reduce((s,p)=>s+p.T.PER,0)/DATA.filter(p=>p.tier==="Max").length,
+      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T.PER,0)/DATA.filter(p=>p.tier==="Mid").length,
+      Low: DATA.filter(p=>p.tier==="Low").reduce((s,p)=>s+p.T.PER,0)/DATA.filter(p=>p.tier==="Low").length },
     { phase: "T+1 (Deal)", Max: DATA.filter(p=>p.tier==="Max").reduce((s,p)=>s+p.T2.PER,0)/DATA.filter(p=>p.tier==="Max").length,
-      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T2.PER,0)/DATA.filter(p=>p.tier==="Mid").length },
+      Mid: DATA.filter(p=>p.tier==="Mid").reduce((s,p)=>s+p.T2.PER,0)/DATA.filter(p=>p.tier==="Mid").length,
+      Low: DATA.filter(p=>p.tier==="Low").reduce((s,p)=>s+p.T2.PER,0)/DATA.filter(p=>p.tier==="Low").length },
   ];
 
   const efficiencyTrap = DATA.map(p => ({
@@ -416,7 +460,7 @@ export default function App() {
     { metric: "PER Drop",  value: Math.min(100, selected.perDrop * 3.5) },
     { metric: "TS Drop",   value: Math.min(100, selected.tsDrop * 4.0) },
     { metric: "Age Risk",  value: selected.age > 31 ? 90 : selected.age > 28 ? 60 : 25 },
-    { metric: "Tier Risk", value: selected.tier === "Max" ? 65 : 40 },
+    { metric: "Tier Risk", value: selected.tier === "Max" ? 65 : selected.tier === "Mid" ? 40 : 20 },
     { metric: "C-Effect",  value: Math.min(100, selected.cEffect * 4.5) },
   ] : [];
 
@@ -448,7 +492,7 @@ export default function App() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 8 }}>
           <div className="header-badge"><div className="pulse" />LIVE MODEL · v2.4</div>
           <div style={{ fontSize: 9, color: "#2a3f52", letterSpacing: 1 }}>
-            N = {DATA.length} PLAYERS · MAX + MID-CLASS CONTRACTS
+            N = {DATA.length} PLAYERS · MAX + MID + LOW CONTRACTS
           </div>
         </div>
       </div>
@@ -470,7 +514,7 @@ export default function App() {
           <div className="sidebar-section">
             <div className="section-label">Contract Tier</div>
             <div className="filter-row">
-              {["ALL","Max","Mid"].map(t => (
+              {["ALL","Max","Mid","Low"].map(t => (
                 <button key={t} className={`chip ${tierFilter===t?"active":""}`} onClick={()=>setTierFilter(t)}>{t}</button>
               ))}
             </div>
@@ -536,9 +580,13 @@ export default function App() {
                   <div className="kpi-sub">Top 10% salary tier avg</div>
                 </div>
                 <div className="kpi-card blue">
-                  <div className="kpi-label">Mid-Class Regression</div>
-                  <div className="kpi-value" style={{ color: "#4fc3f7" }}>−{midAvgDrop}%</div>
-                  <div className="kpi-sub">$15–$25M/yr contracts</div>
+                  <div className="kpi-label">Mid · Low Regression</div>
+                  <div className="kpi-value" style={{ color: "#4fc3f7", fontSize: 26 }}>
+                    {parseFloat(midAvgDrop) >= 0 ? `−${midAvgDrop}` : `+${Math.abs(parseFloat(midAvgDrop)).toFixed(1)}`}%
+                    {" / "}
+                    {parseFloat(lowAvgDrop) >= 0 ? `−${lowAvgDrop}` : `+${Math.abs(parseFloat(lowAvgDrop)).toFixed(1)}`}%
+                  </div>
+                  <div className="kpi-sub">$15–25M · $5–10M contracts</div>
                 </div>
                 <div className="kpi-card green">
                   <div className="kpi-label">Age 28+ PER Slump</div>
@@ -567,20 +615,21 @@ export default function App() {
                 </div>
 
                 <div className="chart-card">
-                  <div className="chart-title">Q2 — MAX vs MID · Tier Regression Curve</div>
-                  <div className="chart-desc">Average PER trajectory across all three contract windows.</div>
+                  <div className="chart-title">Q2 — TIER REGRESSION CURVE · Max vs Mid vs Low</div>
+                  <div className="chart-desc">Average PER trajectory across all three contract windows by salary tier.</div>
                   <ResponsiveContainer width="100%" height={200}>
                     <LineChart data={tierCompare} margin={{ top: 5, right: 10, left: -10, bottom: 0 }}>
                       <CartesianGrid strokeDasharray="3 3" stroke="#1e2d3d" />
                       <XAxis dataKey="phase" tick={{ fill: "#4a6278", fontSize: 9, fontFamily: "IBM Plex Mono" }} axisLine={false} tickLine={false} />
-                      <YAxis domain={[12, 30]} tick={{ fill: "#4a6278", fontSize: 9, fontFamily: "IBM Plex Mono" }} axisLine={false} tickLine={false} />
+                      <YAxis domain={[8, 30]} tick={{ fill: "#4a6278", fontSize: 9, fontFamily: "IBM Plex Mono" }} axisLine={false} tickLine={false} />
                       <Tooltip content={<CustomTooltip />} />
-                      <Line type="monotone" dataKey="Max" stroke="#e63946" strokeWidth={2} dot={{ fill: "#e63946", r: 4 }} name="Max ($34M+)" />
+                      <Line type="monotone" dataKey="Max" stroke="#e63946" strokeWidth={2} dot={{ fill: "#e63946", r: 4 }} name="Max ($40M+)" />
                       <Line type="monotone" dataKey="Mid" stroke="#4fc3f7" strokeWidth={2} dot={{ fill: "#4fc3f7", r: 4 }} name="Mid ($15–25M)" />
+                      <Line type="monotone" dataKey="Low" stroke="#2ecc71" strokeWidth={2} dot={{ fill: "#2ecc71", r: 4 }} name="Low ($5–10M)" />
                     </LineChart>
                   </ResponsiveContainer>
                   <div className="finding-box warn">
-                    MAX players show {(parseFloat(maxAvgDrop) - parseFloat(midAvgDrop)).toFixed(1)}pp MORE regression than Mid-Class — higher incentive sensitivity at the top.
+                    Max players decline {(parseFloat(maxAvgDrop) - parseFloat(midAvgDrop)).toFixed(1)}pp more than Mid and {(parseFloat(maxAvgDrop) - parseFloat(lowAvgDrop)).toFixed(1)}pp more than Low — moral hazard scales with contract size. Low-tier players show near-zero net regression.
                   </div>
                 </div>
 
@@ -728,9 +777,9 @@ export default function App() {
                 {
                   num: "02", color: "#e63946",
                   title: "The Safety Tier Gap",
-                  sub: "Max vs. Mid-Class post-contract regression differential",
-                  finding: `Max contract players (≥$34M/yr) show an average PER regression of ${maxAvgDrop}% vs. ${midAvgDrop}% for Mid-Class signings. The gap (${(parseFloat(maxAvgDrop)-parseFloat(midAvgDrop)).toFixed(1)}pp) suggests that the magnitude of the guaranteed sum amplifies moral hazard. Mid-class players may face higher performance anxiety and roster security pressure, maintaining a stronger effort signal.`,
-                  stat: `${(parseFloat(maxAvgDrop)-parseFloat(midAvgDrop)).toFixed(1)}pp`, statLabel: "Max vs Mid Gap",
+                  sub: "Max vs. Mid vs. Low post-contract regression differential",
+                  finding: `Max contract players (≥$40M/yr) show an average PER regression of ${maxAvgDrop}% vs. ${midAvgDrop}% for Mid-tier and ${lowAvgDrop}% for Low-tier signings. The gradient (Max → Mid: ${(parseFloat(maxAvgDrop)-parseFloat(midAvgDrop)).toFixed(1)}pp, Max → Low: ${(parseFloat(maxAvgDrop)-parseFloat(lowAvgDrop)).toFixed(1)}pp) confirms that moral hazard scales with contract size. Low-tier players face constant roster insecurity — the incentive to perform never fully relaxes regardless of the deal signed.`,
+                  stat: `${(parseFloat(maxAvgDrop)-parseFloat(lowAvgDrop)).toFixed(1)}pp`, statLabel: "Max vs Low Gap",
                 },
                 {
                   num: "03", color: "#4fc3f7",

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude local settings (contains local file paths)
+.claude/settings.local.json

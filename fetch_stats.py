@@ -34,6 +34,8 @@ DELAY      = 4   # seconds between requests — BBRef asks for ≥3 s
 # ── Player definitions ───────────────────────────────────────────────────────
 #
 # AAV figures from Spotrac (hardcoded — site requires JS rendering):
+#
+# MAX tier (~$40–61 M/yr):
 #   Westbrook  OKC   5 yr / $205.0 M   Aug 2017  → $41 M/yr
 #   Harden     HOU   4 yr / $171.1 M   Jul 2019  → $43 M/yr
 #   Lillard    POR   4 yr / $176.3 M   Aug 2021  → $44 M/yr
@@ -43,9 +45,24 @@ DELAY      = 4   # seconds between requests — BBRef asks for ≥3 s
 #   Booker     PHX   4 yr / $214.0 M   Jul 2022  → $54 M/yr
 #   Brown      BOS   5 yr / $304.0 M   Jul 2023  → $61 M/yr
 #
+# MID tier (~$16–24 M/yr):
+#   Noah       NYK   4 yr /  $72.0 M   Jul 2016  → $18 M/yr
+#   Deng       LAL   4 yr /  $72.0 M   Jul 2016  → $18 M/yr
+#   Parsons    MEM   4 yr /  $94.4 M   Jul 2016  → $24 M/yr
+#   Fournier   NYK   4 yr /  $78.0 M   Aug 2021  → $20 M/yr
+#   Mozgov     LAL   4 yr /  $64.0 M   Jul 2016  → $16 M/yr
+#
+# LOW tier (~$5–10 M/yr):
+#   Dellavedova MIL  4 yr /  $38.4 M   Jul 2016  →  $10 M/yr
+#   Korver     ATL   4 yr /  $24.0 M   Jul 2014  →   $6 M/yr
+#   Beverley   HOU   3 yr /  $21.0 M   Jul 2017  →   $7 M/yr
+#   Belinelli  SAS   3 yr /  $19.5 M   Jul 2017  →   $7 M/yr
+#   Sefolosha  ATL   3 yr /  $16.5 M   Jul 2014  →   $6 M/yr
+#
 # Age = player's age in the summer of sign_year.
 
 PLAYERS = [
+    # ── Max ──────────────────────────────────────────────────────────────────
     {
         "id": 1,  "name": "R. Westbrook", "bbref_id": "westbru01",
         "pos": "PG", "age": 28, "tier": "Max", "salary": 41, "contractYear": 2017,
@@ -77,6 +94,48 @@ PLAYERS = [
     {
         "id": 8,  "name": "J. Brown",     "bbref_id": "brownja02",
         "pos": "SF", "age": 26, "tier": "Max", "salary": 61, "contractYear": 2023,
+    },
+    # ── Mid ──────────────────────────────────────────────────────────────────
+    {
+        "id": 9,  "name": "J. Noah",      "bbref_id": "noahjo01",
+        "pos": "C",  "age": 31, "tier": "Mid", "salary": 18, "contractYear": 2016,
+    },
+    {
+        "id": 10, "name": "L. Deng",      "bbref_id": "denglu01",
+        "pos": "SF", "age": 31, "tier": "Mid", "salary": 18, "contractYear": 2016,
+    },
+    {
+        "id": 11, "name": "C. Parsons",   "bbref_id": "parsoch01",
+        "pos": "SF", "age": 27, "tier": "Mid", "salary": 24, "contractYear": 2016,
+    },
+    {
+        "id": 12, "name": "E. Fournier",  "bbref_id": "fournev01",
+        "pos": "SG", "age": 28, "tier": "Mid", "salary": 20, "contractYear": 2021,
+    },
+    {
+        "id": 13, "name": "T. Mozgov",    "bbref_id": "mozgoti01",
+        "pos": "C",  "age": 30, "tier": "Mid", "salary": 16, "contractYear": 2016,
+    },
+    # ── Low ──────────────────────────────────────────────────────────────────
+    {
+        "id": 14, "name": "M. Dellavedova", "bbref_id": "dellama01",
+        "pos": "PG", "age": 25, "tier": "Low", "salary": 10, "contractYear": 2016,
+    },
+    {
+        "id": 15, "name": "K. Korver",    "bbref_id": "korveky01",
+        "pos": "SG", "age": 33, "tier": "Low", "salary":  6, "contractYear": 2014,
+    },
+    {
+        "id": 16, "name": "P. Beverley",  "bbref_id": "beverpa01",
+        "pos": "PG", "age": 29, "tier": "Low", "salary":  7, "contractYear": 2017,
+    },
+    {
+        "id": 17, "name": "M. Belinelli", "bbref_id": "belinma01",
+        "pos": "SG", "age": 31, "tier": "Low", "salary":  7, "contractYear": 2017,
+    },
+    {
+        "id": 18, "name": "T. Sefolosha", "bbref_id": "sefolth01",
+        "pos": "SF", "age": 30, "tier": "Low", "salary":  6, "contractYear": 2014,
     },
 ]
 
