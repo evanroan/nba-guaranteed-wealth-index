@@ -1,0 +1,59 @@
+{
+  "n_players": 68,
+  "target": "per_drop",
+  "features": [
+    "age",
+    "salary",
+    "T_PER",
+    "per_trend",
+    "is_max",
+    "is_mid"
+  ],
+  "r_squared": 0.1318,
+  "adj_r_squared": 0.0464,
+  "coefficients": {
+    "const": {
+      "coef": -1.8604,
+      "pval": 0.6547,
+      "ci_lo": -10.1384,
+      "ci_hi": 6.4176
+    },
+    "age": {
+      "coef": -0.0089,
+      "pval": 0.9517,
+      "ci_lo": -0.3015,
+      "ci_hi": 0.2837
+    },
+    "salary": {
+      "coef": 0.0175,
+      "pval": 0.753,
+      "ci_lo": -0.0933,
+      "ci_hi": 0.1284
+    },
+    "T_PER": {
+      "coef": 0.1271,
+      "pval": 0.2803,
+      "ci_lo": -0.1062,
+      "ci_hi": 0.3604
+    },
+    "per_trend": {
+      "coef": 0.3253,
+      "pval": 0.0827,
+      "ci_lo": -0.0435,
+      "ci_hi": 0.6941
+    },
+    "is_max": {
+      "coef": 0.4221,
+      "pval": 0.8479,
+      "ci_lo": -3.9584,
+      "ci_hi": 4.8025
+    },
+    "is_mid": {
+      "coef": 0.4806,
+      "pval": 0.7122,
+      "ci_lo": -2.1125,
+      "ci_hi": 3.0737
+    }
+  },
+  "note": "Exploratory model \u2014 sample size is small. Coefficients should not be treated as definitive until n > 100."
+}
