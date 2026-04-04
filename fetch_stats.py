@@ -394,6 +394,338 @@ PLAYERS = [
         "id": 68, "name": "J. Lin",        "bbref_id": "linje01",
         "pos": "PG", "age": 26, "tier": "Low", "salary": 12, "contractYear": 2014,
     },
+    # ── BATCH 3 ──────────────────────────────────────────────────────────────
+    # MAX
+    # Steph Curry - GSW 2017 (5yr/$201M)
+    {
+        "id": 69, "name": "S. Curry",      "bbref_id": "curryst01",
+        "pos": "PG", "age": 29, "tier": "Max", "salary": 40, "contractYear": 2017,
+    },
+    # Nikola Jokic - DEN 2019 (5yr/$147M)
+    {
+        "id": 70, "name": "N. Jokic",      "bbref_id": "jokicni01",
+        "pos": "C",  "age": 24, "tier": "Max", "salary": 29, "contractYear": 2019,
+    },
+    # Joel Embiid - PHI 2022 (4yr/$196M)
+    {
+        "id": 71, "name": "J. Embiid",     "bbref_id": "embiijo01",
+        "pos": "C",  "age": 28, "tier": "Max", "salary": 49, "contractYear": 2022,
+    },
+    # Luka Doncic - DAL 2022 (5yr/$207M)
+    {
+        "id": 72, "name": "L. Doncic",     "bbref_id": "doncilu01",
+        "pos": "PG", "age": 23, "tier": "Max", "salary": 41, "contractYear": 2022,
+    },
+    # Ja Morant - MEM 2022 (5yr/$231M)
+    {
+        "id": 73, "name": "J. Morant",     "bbref_id": "moranja01",
+        "pos": "PG", "age": 22, "tier": "Max", "salary": 46, "contractYear": 2022,
+    },
+    # Jayson Tatum - BOS 2023 (5yr/$195M)
+    {
+        "id": 74, "name": "J. Tatum",      "bbref_id": "tatumja01",
+        "pos": "SF", "age": 25, "tier": "Max", "salary": 39, "contractYear": 2023,
+    },
+    # Kemba Walker - BOS 2019 (4yr/$141M)
+    {
+        "id": 75, "name": "K. Walker",     "bbref_id": "walkeke02",
+        "pos": "PG", "age": 29, "tier": "Max", "salary": 35, "contractYear": 2019,
+    },
+    # Kyrie Irving - BKN 2019 (4yr/$136M)
+    {
+        "id": 76, "name": "K. Irving",     "bbref_id": "irvinky01",
+        "pos": "PG", "age": 27, "tier": "Max", "salary": 34, "contractYear": 2019,
+    },
+    # MID
+    # Nikola Vucevic - ORL 2019 (4yr/$100M)
+    {
+        "id": 77, "name": "N. Vucevic",    "bbref_id": "vucevni01",
+        "pos": "C",  "age": 28, "tier": "Mid", "salary": 25, "contractYear": 2019,
+    },
+    # Victor Oladipo - IND 2018 (4yr/$85M)
+    {
+        "id": 78, "name": "V. Oladipo",    "bbref_id": "oladivi01",
+        "pos": "SG", "age": 26, "tier": "Mid", "salary": 21, "contractYear": 2018,
+    },
+    # DeMar DeRozan - SAS 2019 (3yr/$82M)
+    {
+        "id": 79, "name": "D. DeRozan",    "bbref_id": "derozde01",
+        "pos": "SG", "age": 29, "tier": "Mid", "salary": 27, "contractYear": 2019,
+    },
+    # Derrick Rose - CHI 2011 (5yr/$94M)
+    {
+        "id": 80, "name": "D. Rose",       "bbref_id": "rosede01",
+        "pos": "PG", "age": 22, "tier": "Mid", "salary": 19, "contractYear": 2011,
+    },
+    # Ricky Rubio - MIN 2015 (5yr/$56M)
+    {
+        "id": 81, "name": "R. Rubio",      "bbref_id": "rubiori01",
+        "pos": "PG", "age": 24, "tier": "Mid", "salary": 14, "contractYear": 2015,
+    },
+    # Reggie Jackson - DET 2015 (5yr/$80M)
+    {
+        "id": 82, "name": "R. Jackson",    "bbref_id": "jacksre01",
+        "pos": "PG", "age": 25, "tier": "Mid", "salary": 16, "contractYear": 2015,
+    },
+    # Bradley Beal - WAS 2019 (2yr/$52M)
+    {
+        "id": 83, "name": "B. Beal",       "bbref_id": "bealbr01",
+        "pos": "SG", "age": 26, "tier": "Mid", "salary": 26, "contractYear": 2019,
+    },
+    # Dirk Nowitzki - DAL 2010 (4yr/$60M)
+    {
+        "id": 84, "name": "D. Nowitzki",   "bbref_id": "nowitdi01",
+        "pos": "PF", "age": 32, "tier": "Mid", "salary": 15, "contractYear": 2010,
+    },
+    # Dwyane Wade - MIA 2012 (3yr/$48M)
+    {
+        "id": 85, "name": "D. Wade",       "bbref_id": "wadedw01",
+        "pos": "SG", "age": 30, "tier": "Mid", "salary": 16, "contractYear": 2012,
+    },
+    # Myles Turner - IND 2020 (2yr/$36M)
+    {
+        "id": 86, "name": "M. Turner",     "bbref_id": "turnemy01",
+        "pos": "C",  "age": 24, "tier": "Mid", "salary": 18, "contractYear": 2020,
+    },
+    # LOW
+    # Zach Randolph - SAC 2016 (2yr/$24M)
+    {
+        "id": 87, "name": "Z. Randolph",   "bbref_id": "randoza01",
+        "pos": "PF", "age": 34, "tier": "Low", "salary": 11, "contractYear": 2016,
+    },
+    # Wayne Ellington - MIA 2017 (2yr/$12M)
+    {
+        "id": 88, "name": "W. Ellington",  "bbref_id": "ellinwa01",
+        "pos": "SG", "age": 29, "tier": "Low", "salary":  7, "contractYear": 2017,
+    },
+    # Tony Allen - MEM 2014 (2yr/$10M)
+    {
+        "id": 89, "name": "T. Allen",      "bbref_id": "allento01",
+        "pos": "SG", "age": 32, "tier": "Low", "salary":  5, "contractYear": 2014,
+    },
+    # Tiago Splitter - SAS 2013 (4yr/$36M)
+    {
+        "id": 90, "name": "T. Splitter",   "bbref_id": "splitti01",
+        "pos": "C",  "age": 28, "tier": "Low", "salary":  9, "contractYear": 2013,
+    },
+    # Wilson Chandler - DEN 2014 (4yr/$46M)
+    {
+        "id": 91, "name": "W. Chandler",   "bbref_id": "chandwi01",
+        "pos": "SF", "age": 27, "tier": "Low", "salary": 12, "contractYear": 2014,
+    },
+    # ── BATCH 4 ──────────────────────────────────────────────────────────────
+    # MAX
+    # Bam Adebayo - MIA 2020 (5yr/$163M)
+    {
+        "id": 92,  "name": "B. Adebayo",    "bbref_id": "adebaba01",
+        "pos": "C",  "age": 23, "tier": "Max", "salary": 33, "contractYear": 2020,
+    },
+    # Rudy Gobert - UTA 2020 (5yr/$205M)
+    {
+        "id": 93,  "name": "R. Gobert",     "bbref_id": "goberru01",
+        "pos": "C",  "age": 28, "tier": "Max", "salary": 41, "contractYear": 2020,
+    },
+    # D'Angelo Russell - MIN 2019 (4yr/$117M)
+    {
+        "id": 94,  "name": "D. Russell",    "bbref_id": "russeda01",
+        "pos": "PG", "age": 23, "tier": "Max", "salary": 29, "contractYear": 2019,
+    },
+    # De'Aaron Fox - SAC 2021 (5yr/$163M)
+    {
+        "id": 95,  "name": "De'A. Fox",     "bbref_id": "foxde01",
+        "pos": "PG", "age": 23, "tier": "Max", "salary": 33, "contractYear": 2021,
+    },
+    # Brandon Ingram - NOP 2020 (5yr/$158M)
+    {
+        "id": 96,  "name": "B. Ingram",     "bbref_id": "ingrabr01",
+        "pos": "SF", "age": 23, "tier": "Max", "salary": 32, "contractYear": 2020,
+    },
+    # Shai Gilgeous-Alexander - OKC 2021 (5yr/$172M)
+    {
+        "id": 97,  "name": "SGA",           "bbref_id": "gilgesh01",
+        "pos": "PG", "age": 23, "tier": "Max", "salary": 34, "contractYear": 2021,
+    },
+    # Darius Garland - CLE 2022 (5yr/$193M)
+    {
+        "id": 98,  "name": "D. Garland",    "bbref_id": "garlada01",
+        "pos": "PG", "age": 22, "tier": "Max", "salary": 39, "contractYear": 2022,
+    },
+    # MID
+    # Clint Capela - HOU 2018 (5yr/$90M)
+    {
+        "id": 99,  "name": "C. Capela",     "bbref_id": "capelca01",
+        "pos": "C",  "age": 24, "tier": "Mid", "salary": 18, "contractYear": 2018,
+    },
+    # Marcus Smart - BOS 2019 (4yr/$52M)
+    {
+        "id": 100, "name": "M. Smart",      "bbref_id": "smartma01",
+        "pos": "PG", "age": 25, "tier": "Mid", "salary": 13, "contractYear": 2019,
+    },
+    # CJ McCollum - POR 2016 (5yr/$100M)
+    {
+        "id": 101, "name": "CJ McCollum",   "bbref_id": "mccolcj01",
+        "pos": "SG", "age": 24, "tier": "Mid", "salary": 20, "contractYear": 2016,
+    },
+    # Tim Hardaway Jr - DAL 2019 (4yr/$74M)
+    {
+        "id": 102, "name": "T. Hardaway Jr","bbref_id": "hardati02",
+        "pos": "SG", "age": 27, "tier": "Mid", "salary": 19, "contractYear": 2019,
+    },
+    # OG Anunoby - TOR 2022 (4yr/$72M)
+    {
+        "id": 103, "name": "OG Anunoby",    "bbref_id": "anunoog01",
+        "pos": "SF", "age": 25, "tier": "Mid", "salary": 18, "contractYear": 2022,
+    },
+    # Jarrett Allen - CLE 2022 (5yr/$100M)
+    {
+        "id": 104, "name": "J. Allen",      "bbref_id": "allenja01",
+        "pos": "C",  "age": 24, "tier": "Mid", "salary": 20, "contractYear": 2022,
+    },
+    # Tristan Thompson - CLE 2015 (5yr/$82M)
+    {
+        "id": 105, "name": "T. Thompson",   "bbref_id": "thomptr01",
+        "pos": "C",  "age": 24, "tier": "Mid", "salary": 16, "contractYear": 2015,
+    },
+    # Draymond Green - GSW 2015 (5yr/$82M)
+    {
+        "id": 106, "name": "D. Green",      "bbref_id": "greendr01",
+        "pos": "PF", "age": 25, "tier": "Mid", "salary": 16, "contractYear": 2015,
+    },
+    # Dion Waiters - MIA 2017 (4yr/$52M)
+    {
+        "id": 107, "name": "D. Waiters",    "bbref_id": "waitedi01",
+        "pos": "SG", "age": 25, "tier": "Mid", "salary": 13, "contractYear": 2017,
+    },
+    # LOW
+    # Avery Bradley - DET 2014 (4yr/$32M)
+    {
+        "id": 108, "name": "A. Bradley",    "bbref_id": "bradlav01",
+        "pos": "SG", "age": 23, "tier": "Low", "salary":  8, "contractYear": 2014,
+    },
+    # Courtney Lee - CHA 2016 (4yr/$50M)
+    {
+        "id": 109, "name": "C. Lee",        "bbref_id": "leeco01",
+        "pos": "SG", "age": 30, "tier": "Low", "salary": 13, "contractYear": 2016,
+    },
+    # Patrick Patterson - TOR 2016 (3yr/$17M)
+    {
+        "id": 110, "name": "P. Patterson",  "bbref_id": "pattepa01",
+        "pos": "PF", "age": 27, "tier": "Low", "salary":  6, "contractYear": 2016,
+    },
+    # Derrick Favors - UTA 2016 (2yr/$16M)
+    {
+        "id": 111, "name": "D. Favors",     "bbref_id": "favorde01",
+        "pos": "C",  "age": 24, "tier": "Low", "salary":  8, "contractYear": 2016,
+    },
+    # Darren Collison - IND 2017 (3yr/$21M)
+    {
+        "id": 112, "name": "D. Collison",   "bbref_id": "collida01",
+        "pos": "PG", "age": 29, "tier": "Low", "salary":  7, "contractYear": 2017,
+    },
+    # ── BATCH 5 ──────────────────────────────────────────────────────────────
+    # MAX
+    # Pascal Siakam - TOR 2020 (4yr/$130M)
+    {
+        "id": 113, "name": "P. Siakam",     "bbref_id": "siakapa01",
+        "pos": "PF", "age": 26, "tier": "Max", "salary": 33, "contractYear": 2020,
+    },
+    # Zion Williamson - NOP 2022 (5yr/$231M)
+    {
+        "id": 114, "name": "Z. Williamson", "bbref_id": "willizi01",
+        "pos": "PF", "age": 22, "tier": "Max", "salary": 46, "contractYear": 2022,
+    },
+    # Julius Randle - NYK 2021 (4yr/$117M)
+    {
+        "id": 115, "name": "J. Randle",     "bbref_id": "randlju01",
+        "pos": "PF", "age": 26, "tier": "Max", "salary": 29, "contractYear": 2021,
+    },
+    # Donovan Mitchell - UTA 2021 (5yr/$163M)
+    {
+        "id": 116, "name": "D. Mitchell",   "bbref_id": "mitchdo01",
+        "pos": "SG", "age": 25, "tier": "Max", "salary": 33, "contractYear": 2021,
+    },
+    # Dejounte Murray - ATL 2022 (4yr/$120M)
+    {
+        "id": 117, "name": "D. Murray",     "bbref_id": "murrade01",
+        "pos": "PG", "age": 26, "tier": "Max", "salary": 30, "contractYear": 2022,
+    },
+    # MID
+    # Anfernee Simons - POR 2022 (4yr/$100M)
+    {
+        "id": 118, "name": "A. Simons",     "bbref_id": "simonan01",
+        "pos": "SG", "age": 23, "tier": "Mid", "salary": 25, "contractYear": 2022,
+    },
+    # Derrick White - BOS 2022 (4yr/$80M)
+    {
+        "id": 119, "name": "D. White",      "bbref_id": "whitede01",
+        "pos": "PG", "age": 28, "tier": "Mid", "salary": 20, "contractYear": 2022,
+    },
+    # Kyle Kuzma - WAS 2022 (4yr/$102M)
+    {
+        "id": 120, "name": "K. Kuzma",      "bbref_id": "kuzmaky01",
+        "pos": "SF", "age": 27, "tier": "Mid", "salary": 26, "contractYear": 2022,
+    },
+    # Aaron Gordon - ORL 2017 (4yr/$80M)
+    {
+        "id": 121, "name": "A. Gordon",     "bbref_id": "gordoaa01",
+        "pos": "PF", "age": 21, "tier": "Mid", "salary": 20, "contractYear": 2017,
+    },
+    # Danny Green - TOR 2018 (2yr/$30M)
+    {
+        "id": 122, "name": "D. Green (TOR)","bbref_id": "greenda02",
+        "pos": "SG", "age": 31, "tier": "Mid", "salary": 15, "contractYear": 2018,
+    },
+    # Josh Hart - NYK 2022 (4yr/$81M)
+    {
+        "id": 123, "name": "J. Hart",       "bbref_id": "hartjo01",
+        "pos": "SF", "age": 27, "tier": "Mid", "salary": 20, "contractYear": 2022,
+    },
+    # Thaddeus Young - IND 2016 (3yr/$41M)
+    {
+        "id": 124, "name": "T. Young",      "bbref_id": "youngth01",
+        "pos": "PF", "age": 28, "tier": "Mid", "salary": 14, "contractYear": 2016,
+    },
+    # Lonzo Ball - CHI 2021 (4yr/$80M)
+    {
+        "id": 125, "name": "L. Ball",       "bbref_id": "balllo01",
+        "pos": "PG", "age": 24, "tier": "Mid", "salary": 20, "contractYear": 2021,
+    },
+    # Dorian Finney-Smith - DAL 2021 (4yr/$52M)
+    {
+        "id": 126, "name": "D. Finney-Smith","bbref_id": "finnedo01",
+        "pos": "SF", "age": 27, "tier": "Mid", "salary": 13, "contractYear": 2021,
+    },
+    # Naz Reid - MIN 2023 (3yr/$42M)
+    {
+        "id": 127, "name": "N. Reid",       "bbref_id": "reidna01",
+        "pos": "C",  "age": 24, "tier": "Mid", "salary": 14, "contractYear": 2023,
+    },
+    # LOW
+    # Lou Williams - LAC 2018 (3yr/$24M)
+    {
+        "id": 128, "name": "L. Williams",   "bbref_id": "willilo01",
+        "pos": "SG", "age": 31, "tier": "Low", "salary":  8, "contractYear": 2018,
+    },
+    # Marcus Morris Sr - PHX/WAS 2018 (2yr/$20M)
+    {
+        "id": 129, "name": "M. Morris Sr",  "bbref_id": "morrima02",
+        "pos": "PF", "age": 28, "tier": "Low", "salary": 10, "contractYear": 2018,
+    },
+    # Al-Farouq Aminu - POR 2016 (4yr/$36M)
+    {
+        "id": 130, "name": "A. Aminu",      "bbref_id": "aminual01",
+        "pos": "SF", "age": 25, "tier": "Low", "salary":  9, "contractYear": 2016,
+    },
+    # Tony Snell - MIL 2016 (4yr/$33M)
+    {
+        "id": 131, "name": "T. Snell",      "bbref_id": "snellto01",
+        "pos": "SG", "age": 24, "tier": "Low", "salary":  8, "contractYear": 2016,
+    },
+    # Georges Niang - PHI 2022 (3yr/$34M)
+    {
+        "id": 132, "name": "G. Niang",      "bbref_id": "niangge01",
+        "pos": "SF", "age": 29, "tier": "Low", "salary": 11, "contractYear": 2022,
+    },
 ]
 
 # BBRef data-stat column → output key
@@ -556,11 +888,19 @@ def extract_season(adv_df: pd.DataFrame, pg_df: pd.DataFrame, year: int) -> dict
 
 # ── JavaScript / CSV formatting ──────────────────────────────────────────────
 
+def _js_num(v) -> str:
+    """Serialize a Python float/int to a JS-safe number (never 'nan' or 'inf')."""
+    import math
+    if v is None or (isinstance(v, float) and (math.isnan(v) or math.isinf(v))):
+        return "0"
+    return str(v)
+
+
 def fmt_stat_block(s: dict) -> str:
     return (
-        f"{{ PER: {s['PER']}, WS: {s['WS']}, VORP: {s['VORP']}, "
-        f"PTS: {s['PTS']}, AST: {s['AST']}, TRB: {s['TRB']}, "
-        f"TS: {s['TS']}, TOV: {s['TOV']} }}"
+        f"{{ PER: {_js_num(s['PER'])}, WS: {_js_num(s['WS'])}, VORP: {_js_num(s['VORP'])}, "
+        f"PTS: {_js_num(s['PTS'])}, AST: {_js_num(s['AST'])}, TRB: {_js_num(s['TRB'])}, "
+        f"TS: {_js_num(s['TS'])}, TOV: {_js_num(s['TOV'])} }}"
     )
 
 
@@ -657,7 +997,7 @@ def main():
             js_entries_by_id[p["id"]] = fmt_player_js(p, t1, t, t2)
 
             # Build flat CSV row
-            row = {k: v for k, v in p.items() if k != "bbref_id"}
+            row = {k: v for k, v in p.items()}
             for period, stats in [("T1", t1), ("T", t), ("T2", t2)]:
                 for sk, sv in stats.items():
                     row[f"{period}_{sk}"] = sv

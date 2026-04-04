@@ -555,20 +555,289 @@ const PLAYERS = [
   { id: 68,  name: "J. Lin",     pos: "PG", age: 26, tier: "Low", salary: 12, contractYear: 2014,
     T1: { PER: 14.9, WS: 5.4, VORP: 1.5, PTS: 13.4, AST: 6.1, TRB: 3.0, TS: 53.8, TOV: 2.9 },
     T:  { PER: 14.3, WS: 4.4, VORP: 0.9, PTS: 12.5, AST: 4.1, TRB: 2.6, TS: 57.2, TOV: 2.5 },
-    T2: { PER: 15.6, WS: 2.7, VORP: 0.8, PTS: 11.2, AST: 4.6, TRB: 2.6, TS: 53.9, TOV: 2.2 } }
+    T2: { PER: 15.6, WS: 2.7, VORP: 0.8, PTS: 11.2, AST: 4.6, TRB: 2.6, TS: 53.9, TOV: 2.2 } },
+  { id: 69,  name: "S. Curry",     pos: "PG", age: 29, tier: "Max", salary: 40, contractYear: 2017,
+    T1: { PER: 31.5, WS: 17.9, VORP: 9.5, PTS: 30.1, AST: 6.7, TRB: 5.4, TS: 66.9, TOV: 3.3 },
+    T:  { PER: 24.6, WS: 12.6, VORP: 5.9, PTS: 25.3, AST: 6.6, TRB: 4.5, TS: 62.4, TOV: 3.0 },
+    T2: { PER: 28.2, WS: 9.1, VORP: 4.0, PTS: 26.4, AST: 6.1, TRB: 5.1, TS: 67.5, TOV: 3.0 } },
+  { id: 70,  name: "N. Jokic",     pos: "C", age: 24, tier: "Max", salary: 29, contractYear: 2019,
+    T1: { PER: 24.4, WS: 10.7, VORP: 5.5, PTS: 18.5, AST: 6.1, TRB: 10.7, TS: 60.3, TOV: 2.8 },
+    T:  { PER: 26.3, WS: 11.8, VORP: 7.0, PTS: 20.1, AST: 7.3, TRB: 10.8, TS: 58.9, TOV: 3.1 },
+    T2: { PER: 24.9, WS: 9.8, VORP: 5.5, PTS: 19.9, AST: 7.0, TRB: 9.7, TS: 60.5, TOV: 3.1 } },
+  { id: 71,  name: "J. Embiid",     pos: "C", age: 28, tier: "Max", salary: 49, contractYear: 2022,
+    T1: { PER: 30.3, WS: 8.8, VORP: 3.8, PTS: 28.5, AST: 2.8, TRB: 10.6, TS: 63.6, TOV: 3.1 },
+    T:  { PER: 31.2, WS: 12.0, VORP: 6.5, PTS: 30.6, AST: 4.2, TRB: 11.7, TS: 61.6, TOV: 3.1 },
+    T2: { PER: 31.4, WS: 12.3, VORP: 6.4, PTS: 33.1, AST: 4.2, TRB: 10.2, TS: 65.5, TOV: 3.4 } },
+  { id: 72,  name: "L. Doncic",     pos: "PG", age: 23, tier: "Max", salary: 41, contractYear: 2022,
+    T1: { PER: 25.3, WS: 7.7, VORP: 5.1, PTS: 27.7, AST: 8.6, TRB: 8.0, TS: 58.7, TOV: 4.3 },
+    T:  { PER: 25.1, WS: 7.6, VORP: 5.9, PTS: 28.4, AST: 8.7, TRB: 9.1, TS: 57.1, TOV: 4.5 },
+    T2: { PER: 28.7, WS: 10.2, VORP: 6.6, PTS: 32.4, AST: 8.0, TRB: 8.6, TS: 60.9, TOV: 3.6 } },
+  { id: 73,  name: "J. Morant",     pos: "PG", age: 22, tier: "Max", salary: 46, contractYear: 2022,
+    T1: { PER: 16.7, WS: 3.2, VORP: 0.8, PTS: 19.1, AST: 7.4, TRB: 4.0, TS: 53.7, TOV: 3.2 },
+    T:  { PER: 24.4, WS: 6.7, VORP: 3.9, PTS: 27.4, AST: 6.7, TRB: 5.7, TS: 57.5, TOV: 3.4 },
+    T2: { PER: 23.3, WS: 6.0, VORP: 3.8, PTS: 26.2, AST: 8.1, TRB: 5.9, TS: 55.7, TOV: 3.4 } },
+  { id: 74,  name: "J. Tatum",     pos: "SF", age: 25, tier: "Max", salary: 39, contractYear: 2023,
+    T1: { PER: 21.8, WS: 9.6, VORP: 4.8, PTS: 26.9, AST: 4.4, TRB: 8.0, TS: 57.8, TOV: 2.9 },
+    T:  { PER: 23.7, WS: 10.5, VORP: 5.1, PTS: 30.1, AST: 4.6, TRB: 8.8, TS: 60.7, TOV: 2.9 },
+    T2: { PER: 22.3, WS: 10.4, VORP: 4.7, PTS: 26.9, AST: 4.9, TRB: 8.1, TS: 60.4, TOV: 2.5 } },
+  { id: 75,  name: "K. Walker",     pos: "PG", age: 29, tier: "Max", salary: 35, contractYear: 2019,
+    T1: { PER: 20.6, WS: 8.6, VORP: 4.2, PTS: 22.1, AST: 5.6, TRB: 3.1, TS: 57.2, TOV: 2.2 },
+    T:  { PER: 21.7, WS: 7.4, VORP: 4.4, PTS: 25.6, AST: 5.9, TRB: 4.4, TS: 55.8, TOV: 2.6 },
+    T2: { PER: 20.0, WS: 5.9, VORP: 2.9, PTS: 20.4, AST: 4.8, TRB: 3.9, TS: 57.5, TOV: 2.1 } },
+  { id: 76,  name: "K. Irving",     pos: "PG", age: 27, tier: "Max", salary: 34, contractYear: 2019,
+    T1: { PER: 25.0, WS: 8.9, VORP: 4.5, PTS: 24.4, AST: 5.1, TRB: 3.8, TS: 61.0, TOV: 2.3 },
+    T:  { PER: 24.3, WS: 9.1, VORP: 5.1, PTS: 23.8, AST: 6.9, TRB: 5.0, TS: 59.2, TOV: 2.6 },
+    T2: { PER: 26.2, WS: 2.9, VORP: 1.6, PTS: 27.4, AST: 6.4, TRB: 5.2, TS: 59.5, TOV: 2.6 } },
+  { id: 77,  name: "N. Vucevic",     pos: "C", age: 28, tier: "Mid", salary: 25, contractYear: 2019,
+    T1: { PER: 19.7, WS: 3.6, VORP: 2.0, PTS: 16.5, AST: 3.4, TRB: 9.2, TS: 53.3, TOV: 1.9 },
+    T:  { PER: 25.5, WS: 10.1, VORP: 5.5, PTS: 20.8, AST: 3.8, TRB: 12.0, TS: 57.3, TOV: 2.0 },
+    T2: { PER: 21.9, WS: 6.4, VORP: 3.1, PTS: 19.6, AST: 3.6, TRB: 10.9, TS: 54.9, TOV: 1.4 } },
+  { id: 78,  name: "V. Oladipo",     pos: "SG", age: 26, tier: "Mid", salary: 21, contractYear: 2018,
+    T1: { PER: 13.6, WS: 4.0, VORP: 0.8, PTS: 15.9, AST: 2.6, TRB: 4.3, TS: 53.4, TOV: 1.8 },
+    T:  { PER: 23.1, WS: 8.2, VORP: 5.0, PTS: 23.1, AST: 4.3, TRB: 5.2, TS: 57.7, TOV: 2.9 },
+    T2: { PER: 17.6, WS: 2.3, VORP: 1.4, PTS: 18.8, AST: 5.2, TRB: 5.6, TS: 51.9, TOV: 2.3 } },
+  { id: 79,  name: "D. DeRozan",     pos: "SG", age: 29, tier: "Mid", salary: 27, contractYear: 2019,
+    T1: { PER: 21.0, WS: 9.6, VORP: 3.2, PTS: 23.0, AST: 5.2, TRB: 3.9, TS: 55.5, TOV: 2.2 },
+    T:  { PER: 19.6, WS: 6.3, VORP: 2.2, PTS: 21.2, AST: 6.2, TRB: 6.0, TS: 54.2, TOV: 2.6 },
+    T2: { PER: 21.6, WS: 7.3, VORP: 2.3, PTS: 22.1, AST: 5.6, TRB: 5.5, TS: 60.3, TOV: 2.4 } },
+  { id: 80,  name: "D. Rose",     pos: "PG", age: 22, tier: "Mid", salary: 19, contractYear: 2011,
+    T1: { PER: 18.6, WS: 6.0, VORP: 2.7, PTS: 20.8, AST: 6.0, TRB: 3.8, TS: 53.2, TOV: 2.8 },
+    T:  { PER: 23.5, WS: 13.1, VORP: 6.7, PTS: 25.0, AST: 7.7, TRB: 4.1, TS: 55.0, TOV: 3.4 },
+    T2: { PER: 23.0, WS: 6.0, VORP: 2.9, PTS: 21.8, AST: 7.9, TRB: 3.4, TS: 53.2, TOV: 3.1 } },
+  { id: 81,  name: "R. Rubio",     pos: "PG", age: 24, tier: "Mid", salary: 14, contractYear: 2015,
+    T1: { PER: 15.4, WS: 5.9, VORP: 2.1, PTS: 9.5, AST: 8.6, TRB: 4.2, TS: 49.1, TOV: 2.7 },
+    T:  { PER: 15.2, WS: 0.5, VORP: 0.3, PTS: 10.3, AST: 8.8, TRB: 5.7, TS: 45.2, TOV: 2.9 },
+    T2: { PER: 17.6, WS: 5.8, VORP: 2.3, PTS: 10.1, AST: 8.7, TRB: 4.3, TS: 52.9, TOV: 2.5 } },
+  { id: 82,  name: "R. Jackson",     pos: "PG", age: 25, tier: "Mid", salary: 16, contractYear: 2015,
+    T1: { PER: 15.4, WS: 4.9, VORP: 1.2, PTS: 13.1, AST: 4.1, TRB: 3.9, TS: 52.7, TOV: 2.1 },
+    T:  { PER: 17.2, WS: 4.9, VORP: 1.8, PTS: 14.5, AST: 6.0, TRB: 4.2, TS: 51.1, TOV: 2.4 },
+    T2: { PER: 19.6, WS: 6.9, VORP: 2.8, PTS: 18.8, AST: 6.2, TRB: 3.2, TS: 53.5, TOV: 2.8 } },
+  { id: 83,  name: "B. Beal",     pos: "SG", age: 26, tier: "Mid", salary: 26, contractYear: 2019,
+    T1: { PER: 18.4, WS: 6.9, VORP: 3.1, PTS: 22.6, AST: 4.5, TRB: 4.4, TS: 56.4, TOV: 2.6 },
+    T:  { PER: 20.8, WS: 7.6, VORP: 3.7, PTS: 25.6, AST: 5.5, TRB: 5.0, TS: 58.1, TOV: 2.7 },
+    T2: { PER: 23.2, WS: 5.1, VORP: 2.5, PTS: 30.5, AST: 6.1, TRB: 4.2, TS: 57.9, TOV: 3.4 } },
+  { id: 84,  name: "D. Nowitzki",     pos: "PF", age: 32, tier: "Mid", salary: 15, contractYear: 2010,
+    T1: { PER: 23.1, WS: 10.9, VORP: 4.2, PTS: 25.9, AST: 2.4, TRB: 8.4, TS: 56.4, TOV: 1.9 },
+    T:  { PER: 22.9, WS: 12.3, VORP: 4.7, PTS: 25.0, AST: 2.7, TRB: 7.7, TS: 57.8, TOV: 1.8 },
+    T2: { PER: 23.4, WS: 11.1, VORP: 4.5, PTS: 23.0, AST: 2.6, TRB: 7.0, TS: 61.2, TOV: 1.9 } },
+  { id: 85,  name: "D. Wade",     pos: "SG", age: 30, tier: "Mid", salary: 16, contractYear: 2012,
+    T1: { PER: 25.6, WS: 12.8, VORP: 6.1, PTS: 25.5, AST: 4.6, TRB: 6.4, TS: 58.1, TOV: 3.1 },
+    T:  { PER: 26.3, WS: 7.7, VORP: 4.0, PTS: 22.1, AST: 4.6, TRB: 4.8, TS: 55.9, TOV: 2.6 },
+    T2: { PER: 24.0, WS: 9.6, VORP: 3.8, PTS: 21.2, AST: 5.1, TRB: 5.0, TS: 57.1, TOV: 2.8 } },
+  { id: 86,  name: "M. Turner",     pos: "C", age: 24, tier: "Mid", salary: 18, contractYear: 2020,
+    T1: { PER: 18.0, WS: 6.3, VORP: 2.4, PTS: 13.3, AST: 1.6, TRB: 7.2, TS: 56.7, TOV: 1.4 },
+    T:  { PER: 14.8, WS: 4.2, VORP: 1.0, PTS: 12.1, AST: 1.2, TRB: 6.6, TS: 56.6, TOV: 1.4 },
+    T2: { PER: 15.3, WS: 3.3, VORP: 0.9, PTS: 12.6, AST: 1.0, TRB: 6.5, TS: 59.9, TOV: 1.4 } },
+  { id: 87,  name: "Z. Randolph",     pos: "PF", age: 34, tier: "Low", salary: 11, contractYear: 2016,
+    T1: { PER: 19.5, WS: 7.2, VORP: 1.9, PTS: 16.1, AST: 2.2, TRB: 10.5, TS: 53.8, TOV: 2.2 },
+    T:  { PER: 18.3, WS: 4.3, VORP: 0.9, PTS: 15.3, AST: 2.1, TRB: 7.8, TS: 51.9, TOV: 1.5 },
+    T2: { PER: 18.5, WS: 3.2, VORP: 0.7, PTS: 14.1, AST: 1.7, TRB: 8.2, TS: 49.0, TOV: 1.4 } },
+  { id: 88,  name: "W. Ellington",     pos: "SG", age: 29, tier: "Low", salary: 7, contractYear: 2017,
+    T1: { PER: 10.1, WS: 0.8, VORP: -0.3, PTS: 7.7, AST: 1.1, TRB: 2.3, TS: 49.8, TOV: 0.6 },
+    T:  { PER: 12.6, WS: 3.3, VORP: 0.7, PTS: 10.5, AST: 1.1, TRB: 2.1, TS: 56.5, TOV: 0.5 },
+    T2: { PER: 12.5, WS: 4.5, VORP: 1.2, PTS: 11.2, AST: 1.0, TRB: 2.8, TS: 58.8, TOV: 0.7 } },
+  { id: 89,  name: "T. Allen",     pos: "SG", age: 32, tier: "Low", salary: 5, contractYear: 2014,
+    T1: { PER: 13.2, WS: 5.1, VORP: 1.2, PTS: 8.9, AST: 1.2, TRB: 4.6, TS: 48.9, TOV: 1.2 },
+    T:  { PER: 15.6, WS: 2.7, VORP: 1.0, PTS: 9.0, AST: 1.7, TRB: 3.8, TS: 53.1, TOV: 1.6 },
+    T2: { PER: 14.6, WS: 4.1, VORP: 1.5, PTS: 8.6, AST: 1.4, TRB: 4.4, TS: 52.8, TOV: 1.4 } },
+  { id: 90,  name: "T. Splitter",     pos: "C", age: 28, tier: "Low", salary: 9, contractYear: 2013,
+    T1: { PER: 20.5, WS: 4.6, VORP: 1.1, PTS: 9.3, AST: 1.1, TRB: 5.2, TS: 64.9, TOV: 1.5 },
+    T:  { PER: 18.7, WS: 8.2, VORP: 2.1, PTS: 10.3, AST: 1.6, TRB: 6.4, TS: 60.9, TOV: 1.2 },
+    T2: { PER: 16.5, WS: 4.3, VORP: 0.8, PTS: 8.2, AST: 1.5, TRB: 6.2, TS: 57.2, TOV: 1.3 } },
+  { id: 91,  name: "W. Chandler",     pos: "SF", age: 27, tier: "Low", salary: 12, contractYear: 2014,
+    T1: { PER: 16.6, WS: 3.1, VORP: 0.7, PTS: 13.0, AST: 1.3, TRB: 5.1, TS: 55.6, TOV: 1.4 },
+    T:  { PER: 12.4, WS: 3.1, VORP: 0.6, PTS: 13.6, AST: 1.8, TRB: 4.7, TS: 52.6, TOV: 1.3 },
+    T2: { PER: 13.2, WS: 3.6, VORP: 0.9, PTS: 13.9, AST: 1.7, TRB: 6.1, TS: 52.3, TOV: 1.4 } },
+  { id: 92,  name: "B. Adebayo",     pos: "C", age: 23, tier: "Max", salary: 33, contractYear: 2020,
+    T1: { PER: 17.9, WS: 6.8, VORP: 1.8, PTS: 8.9, AST: 2.2, TRB: 7.3, TS: 62.3, TOV: 1.5 },
+    T:  { PER: 20.3, WS: 8.5, VORP: 3.3, PTS: 15.9, AST: 5.1, TRB: 10.2, TS: 59.8, TOV: 2.8 },
+    T2: { PER: 22.7, WS: 8.8, VORP: 3.7, PTS: 18.7, AST: 5.4, TRB: 9.0, TS: 62.6, TOV: 2.6 } },
+  { id: 93,  name: "R. Gobert",     pos: "C", age: 28, tier: "Max", salary: 41, contractYear: 2020,
+    T1: { PER: 24.6, WS: 14.4, VORP: 4.8, PTS: 15.9, AST: 2.0, TRB: 12.9, TS: 68.2, TOV: 1.6 },
+    T:  { PER: 21.7, WS: 10.7, VORP: 3.3, PTS: 15.1, AST: 1.5, TRB: 13.5, TS: 69.9, TOV: 1.9 },
+    T2: { PER: 23.5, WS: 11.3, VORP: 3.8, PTS: 14.3, AST: 1.3, TRB: 13.5, TS: 68.3, TOV: 1.7 } },
+  { id: 94,  name: "D. Russell",     pos: "PG", age: 23, tier: "Max", salary: 29, contractYear: 2019,
+    T1: { PER: 15.2, WS: 0.4, VORP: 0.3, PTS: 15.5, AST: 5.2, TRB: 3.9, TS: 50.9, TOV: 3.1 },
+    T:  { PER: 19.4, WS: 5.0, VORP: 3.4, PTS: 21.1, AST: 7.0, TRB: 3.9, TS: 53.3, TOV: 3.1 },
+    T2: { PER: 18.7, WS: 1.8, VORP: 1.4, PTS: 23.1, AST: 6.3, TRB: 3.9, TS: 55.6, TOV: 3.3 } },
+  { id: 95,  name: "De'A. Fox",     pos: "PG", age: 23, tier: "Max", salary: 33, contractYear: 2021,
+    T1: { PER: 20.6, WS: 4.0, VORP: 1.6, PTS: 21.1, AST: 6.8, TRB: 3.8, TS: 55.8, TOV: 3.1 },
+    T:  { PER: 20.7, WS: 4.2, VORP: 2.0, PTS: 25.2, AST: 7.2, TRB: 3.5, TS: 56.5, TOV: 3.0 },
+    T2: { PER: 17.4, WS: 2.5, VORP: 0.7, PTS: 23.2, AST: 5.6, TRB: 3.9, TS: 54.9, TOV: 2.8 } },
+  { id: 96,  name: "B. Ingram",     pos: "SF", age: 23, tier: "Max", salary: 32, contractYear: 2020,
+    T1: { PER: 13.4, WS: 2.0, VORP: 0.0, PTS: 18.3, AST: 3.0, TRB: 5.1, TS: 55.5, TOV: 2.5 },
+    T:  { PER: 18.8, WS: 5.1, VORP: 2.2, PTS: 23.8, AST: 4.2, TRB: 6.1, TS: 58.7, TOV: 3.0 },
+    T2: { PER: 19.2, WS: 5.3, VORP: 2.2, PTS: 23.8, AST: 4.9, TRB: 4.9, TS: 58.4, TOV: 2.5 } },
+  { id: 97,  name: "SGA",     pos: "PG", age: 23, tier: "Max", salary: 34, contractYear: 2021,
+    T1: { PER: 17.7, WS: 6.1, VORP: 2.2, PTS: 19.0, AST: 3.3, TRB: 5.9, TS: 56.8, TOV: 1.9 },
+    T:  { PER: 21.6, WS: 3.5, VORP: 1.8, PTS: 23.7, AST: 5.9, TRB: 4.7, TS: 62.3, TOV: 3.0 },
+    T2: { PER: 20.9, WS: 4.6, VORP: 2.7, PTS: 24.5, AST: 5.9, TRB: 5.0, TS: 55.7, TOV: 2.8 } },
+  { id: 98,  name: "D. Garland",     pos: "PG", age: 22, tier: "Max", salary: 39, contractYear: 2022,
+    T1: { PER: 14.2, WS: 1.2, VORP: -0.1, PTS: 17.4, AST: 6.1, TRB: 2.4, TS: 54.7, TOV: 3.0 },
+    T:  { PER: 19.0, WS: 6.3, VORP: 2.8, PTS: 21.7, AST: 8.6, TRB: 3.3, TS: 57.6, TOV: 3.6 },
+    T2: { PER: 18.8, WS: 7.6, VORP: 2.7, PTS: 21.6, AST: 7.8, TRB: 2.7, TS: 58.7, TOV: 2.9 } },
+  { id: 99,  name: "C. Capela",     pos: "C", age: 24, tier: "Mid", salary: 18, contractYear: 2018,
+    T1: { PER: 21.4, WS: 5.9, VORP: 1.2, PTS: 12.6, AST: 1.0, TRB: 8.1, TS: 63.8, TOV: 1.3 },
+    T:  { PER: 24.5, WS: 10.2, VORP: 2.8, PTS: 13.9, AST: 0.9, TRB: 10.8, TS: 65.0, TOV: 1.4 },
+    T2: { PER: 23.8, WS: 10.8, VORP: 2.8, PTS: 16.6, AST: 1.4, TRB: 12.7, TS: 65.8, TOV: 1.4 } },
+  { id: 100,  name: "M. Smart",     pos: "PG", age: 25, tier: "Mid", salary: 13, contractYear: 2019,
+    T1: { PER: 10.8, WS: 1.9, VORP: 0.3, PTS: 10.2, AST: 4.8, TRB: 3.5, TS: 47.9, TOV: 2.4 },
+    T:  { PER: 13.1, WS: 5.3, VORP: 1.5, PTS: 8.9, AST: 4.0, TRB: 2.9, TS: 56.8, TOV: 1.5 },
+    T2: { PER: 13.8, WS: 4.5, VORP: 1.6, PTS: 12.9, AST: 4.9, TRB: 3.8, TS: 51.8, TOV: 1.7 } },
+  { id: 101,  name: "CJ McCollum",     pos: "SG", age: 24, tier: "Mid", salary: 20, contractYear: 2016,
+    T1: { PER: 13.1, WS: 1.8, VORP: 0.4, PTS: 6.8, AST: 1.0, TRB: 1.5, TS: 53.4, TOV: 0.8 },
+    T:  { PER: 17.7, WS: 6.0, VORP: 2.3, PTS: 20.8, AST: 4.3, TRB: 3.2, TS: 54.4, TOV: 2.5 },
+    T2: { PER: 19.9, WS: 7.6, VORP: 2.8, PTS: 23.0, AST: 3.6, TRB: 3.6, TS: 58.5, TOV: 2.2 } },
+  { id: 102,  name: "T. Hardaway Jr",     pos: "SG", age: 27, tier: "Mid", salary: 19, contractYear: 2019,
+    T1: { PER: 14.4, WS: 2.6, VORP: 0.7, PTS: 17.5, AST: 2.7, TRB: 3.9, TS: 53.3, TOV: 1.6 },
+    T:  { PER: 13.6, WS: 1.8, VORP: 0.0, PTS: 18.1, AST: 2.4, TRB: 3.4, TS: 52.7, TOV: 1.6 },
+    T2: { PER: 14.5, WS: 4.4, VORP: 1.0, PTS: 15.8, AST: 1.9, TRB: 3.3, TS: 58.1, TOV: 1.0 } },
+  { id: 103,  name: "OG Anunoby",     pos: "SF", age: 25, tier: "Mid", salary: 18, contractYear: 2022,
+    T1: { PER: 15.4, WS: 3.1, VORP: 1.2, PTS: 15.9, AST: 2.2, TRB: 5.5, TS: 60.5, TOV: 1.7 },
+    T:  { PER: 14.8, WS: 3.7, VORP: 1.1, PTS: 17.1, AST: 2.6, TRB: 5.5, TS: 54.9, TOV: 1.7 },
+    T2: { PER: 14.6, WS: 4.7, VORP: 1.5, PTS: 16.8, AST: 2.0, TRB: 5.0, TS: 58.6, TOV: 2.0 } },
+  { id: 104,  name: "J. Allen",     pos: "C", age: 24, tier: "Mid", salary: 20, contractYear: 2022,
+    T1: { PER: 20.1, WS: 6.4, VORP: 1.4, PTS: 12.8, AST: 1.7, TRB: 10.0, TS: 66.1, TOV: 1.6 },
+    T:  { PER: 23.0, WS: 8.5, VORP: 2.7, PTS: 16.1, AST: 1.6, TRB: 10.8, TS: 69.8, TOV: 1.7 },
+    T2: { PER: 19.9, WS: 9.5, VORP: 2.4, PTS: 14.3, AST: 1.7, TRB: 9.8, TS: 67.0, TOV: 1.4 } },
+  { id: 105,  name: "T. Thompson",     pos: "C", age: 24, tier: "Mid", salary: 16, contractYear: 2015,
+    T1: { PER: 14.9, WS: 5.7, VORP: -0.1, PTS: 11.7, AST: 0.9, TRB: 9.2, TS: 52.8, TOV: 1.3 },
+    T:  { PER: 15.6, WS: 6.8, VORP: 0.4, PTS: 8.5, AST: 0.5, TRB: 8.0, TS: 58.0, TOV: 1.0 },
+    T2: { PER: 15.9, WS: 8.7, VORP: 1.2, PTS: 7.8, AST: 0.8, TRB: 9.0, TS: 61.1, TOV: 0.7 } },
+  { id: 106,  name: "D. Green",     pos: "PF", age: 25, tier: "Mid", salary: 16, contractYear: 2015,
+    T1: { PER: 12.7, WS: 4.5, VORP: 1.8, PTS: 6.2, AST: 1.9, TRB: 5.0, TS: 49.8, TOV: 1.1 },
+    T:  { PER: 16.4, WS: 8.5, VORP: 3.5, PTS: 11.7, AST: 3.7, TRB: 8.2, TS: 54.0, TOV: 1.7 },
+    T2: { PER: 19.3, WS: 11.1, VORP: 5.3, PTS: 14.0, AST: 7.4, TRB: 9.5, TS: 58.7, TOV: 3.2 } },
+  { id: 107,  name: "D. Waiters",     pos: "SG", age: 25, tier: "Mid", salary: 13, contractYear: 2017,
+    T1: { PER: 9.4, WS: 2.1, VORP: -0.4, PTS: 9.8, AST: 2.0, TRB: 2.6, TS: 49.2, TOV: 1.5 },
+    T:  { PER: 14.5, WS: 1.6, VORP: 0.7, PTS: 15.8, AST: 4.3, TRB: 3.3, TS: 50.7, TOV: 2.2 },
+    T2: { PER: 10.5, WS: 0.1, VORP: -0.4, PTS: 14.3, AST: 3.8, TRB: 2.6, TS: 48.7, TOV: 2.3 } },
+  { id: 108,  name: "A. Bradley",     pos: "SG", age: 23, tier: "Low", salary: 8, contractYear: 2014,
+    T1: { PER: 8.8, WS: 0.4, VORP: -0.6, PTS: 9.2, AST: 2.1, TRB: 2.2, TS: 46.1, TOV: 1.4 },
+    T:  { PER: 12.7, WS: 1.8, VORP: 0.1, PTS: 14.9, AST: 1.4, TRB: 3.8, TS: 51.0, TOV: 1.6 },
+    T2: { PER: 11.5, WS: 2.5, VORP: -0.1, PTS: 13.9, AST: 1.8, TRB: 3.1, TS: 50.7, TOV: 1.4 } },
+  { id: 109,  name: "C. Lee",     pos: "SG", age: 30, tier: "Low", salary: 13, contractYear: 2016,
+    T1: { PER: 11.5, WS: 4.8, VORP: 0.9, PTS: 10.1, AST: 2.0, TRB: 2.3, TS: 55.5, TOV: 1.0 },
+    T:  { PER: 11.5, WS: 3.9, VORP: 0.6, PTS: 9.6, AST: 1.7, TRB: 2.6, TS: 55.1, TOV: 0.9 },
+    T2: { PER: 12.2, WS: 4.2, VORP: 0.7, PTS: 10.8, AST: 2.3, TRB: 3.4, TS: 55.9, TOV: 0.9 } },
+  { id: 110,  name: "P. Patterson",     pos: "PF", age: 27, tier: "Low", salary: 6, contractYear: 2016,
+    T1: { PER: 14.6, WS: 6.1, VORP: 2.4, PTS: 8.0, AST: 1.9, TRB: 5.3, TS: 56.8, TOV: 0.7 },
+    T:  { PER: 10.6, WS: 3.6, VORP: 1.0, PTS: 6.9, AST: 1.2, TRB: 4.3, TS: 53.4, TOV: 0.8 },
+    T2: { PER: 10.8, WS: 3.3, VORP: 0.8, PTS: 6.8, AST: 1.2, TRB: 4.5, TS: 54.2, TOV: 0.6 } },
+  { id: 111,  name: "D. Favors",     pos: "C", age: 24, tier: "Low", salary: 8, contractYear: 2016,
+    T1: { PER: 21.8, WS: 8.3, VORP: 2.6, PTS: 16.0, AST: 1.5, TRB: 8.2, TS: 55.8, TOV: 1.6 },
+    T:  { PER: 21.6, WS: 7.1, VORP: 2.6, PTS: 16.4, AST: 1.5, TRB: 8.1, TS: 55.1, TOV: 1.7 },
+    T2: { PER: 15.8, WS: 2.7, VORP: 0.6, PTS: 9.5, AST: 1.1, TRB: 6.1, TS: 51.2, TOV: 1.2 } },
+  { id: 112,  name: "D. Collison",     pos: "PG", age: 29, tier: "Low", salary: 7, contractYear: 2017,
+    T1: { PER: 15.9, WS: 5.2, VORP: 1.2, PTS: 14.0, AST: 4.3, TRB: 2.3, TS: 59.1, TOV: 1.8 },
+    T:  { PER: 15.3, WS: 3.9, VORP: 0.6, PTS: 13.2, AST: 4.6, TRB: 2.2, TS: 57.0, TOV: 1.7 },
+    T2: { PER: 18.8, WS: 7.6, VORP: 2.4, PTS: 12.4, AST: 5.3, TRB: 2.6, TS: 61.0, TOV: 1.2 } },
+  { id: 113,  name: "P. Siakam",     pos: "PF", age: 26, tier: "Max", salary: 33, contractYear: 2020,
+    T1: { PER: 18.7, WS: 9.3, VORP: 2.8, PTS: 16.9, AST: 3.1, TRB: 6.9, TS: 62.8, TOV: 1.9 },
+    T:  { PER: 17.9, WS: 5.4, VORP: 2.0, PTS: 22.9, AST: 3.5, TRB: 7.3, TS: 55.4, TOV: 2.5 },
+    T2: { PER: 17.7, WS: 4.2, VORP: 1.4, PTS: 21.4, AST: 4.5, TRB: 7.2, TS: 54.7, TOV: 2.3 } },
+  // id=114 Z. Williamson removed — missed walk year (2021-22) with injury; T stats unavailable
+  { id: 115,  name: "J. Randle",     pos: "PF", age: 26, tier: "Max", salary: 29, contractYear: 2021,
+    T1: { PER: 17.5, WS: 2.7, VORP: 0.9, PTS: 19.5, AST: 3.1, TRB: 9.7, TS: 53.8, TOV: 3.0 },
+    T:  { PER: 19.7, WS: 7.8, VORP: 3.9, PTS: 24.1, AST: 6.0, TRB: 10.2, TS: 56.7, TOV: 3.4 },
+    T2: { PER: 15.7, WS: 3.1, VORP: 1.6, PTS: 20.1, AST: 5.1, TRB: 9.9, TS: 50.9, TOV: 3.4 } },
+  { id: 116,  name: "D. Mitchell",     pos: "SG", age: 25, tier: "Max", salary: 33, contractYear: 2021,
+    T1: { PER: 18.8, WS: 5.4, VORP: 2.3, PTS: 24.0, AST: 4.3, TRB: 4.4, TS: 55.8, TOV: 2.7 },
+    T:  { PER: 21.3, WS: 6.2, VORP: 2.8, PTS: 26.4, AST: 5.2, TRB: 4.4, TS: 56.9, TOV: 2.8 },
+    T2: { PER: 21.6, WS: 7.2, VORP: 3.6, PTS: 25.9, AST: 5.3, TRB: 4.2, TS: 57.2, TOV: 3.0 } },
+  { id: 117,  name: "D. Murray",     pos: "PG", age: 26, tier: "Max", salary: 30, contractYear: 2022,
+    T1: { PER: 16.5, WS: 3.3, VORP: 1.5, PTS: 15.7, AST: 5.4, TRB: 7.1, TS: 50.9, TOV: 1.7 },
+    T:  { PER: 22.3, WS: 7.3, VORP: 4.4, PTS: 21.1, AST: 9.2, TRB: 8.3, TS: 53.3, TOV: 2.6 },
+    T2: { PER: 17.0, WS: 4.7, VORP: 2.1, PTS: 20.5, AST: 6.1, TRB: 5.3, TS: 54.0, TOV: 2.2 } },
+  { id: 118,  name: "A. Simons",     pos: "SG", age: 23, tier: "Mid", salary: 25, contractYear: 2022,
+    T1: { PER: 12.3, WS: 1.8, VORP: 0.3, PTS: 7.8, AST: 1.4, TRB: 2.2, TS: 58.9, TOV: 0.7 },
+    T:  { PER: 15.3, WS: 1.9, VORP: 0.5, PTS: 17.3, AST: 3.9, TRB: 2.6, TS: 58.3, TOV: 2.0 },
+    T2: { PER: 14.8, WS: 2.5, VORP: 0.5, PTS: 21.1, AST: 4.1, TRB: 2.6, TS: 58.1, TOV: 2.1 } },
+  { id: 119,  name: "D. White",     pos: "PG", age: 28, tier: "Mid", salary: 20, contractYear: 2022,
+    T1: { PER: 15.0, WS: 1.9, VORP: 0.9, PTS: 15.4, AST: 3.5, TRB: 3.0, TS: 55.0, TOV: 1.3 },
+    T:  { PER: 14.8, WS: 5.1, VORP: 1.6, PTS: 13.2, AST: 4.9, TRB: 3.5, TS: 54.9, TOV: 1.6 },
+    T2: { PER: 15.4, WS: 7.4, VORP: 2.6, PTS: 12.4, AST: 3.9, TRB: 3.6, TS: 60.4, TOV: 1.2 } },
+  { id: 120,  name: "K. Kuzma",     pos: "SF", age: 27, tier: "Mid", salary: 26, contractYear: 2022,
+    T1: { PER: 12.7, WS: 3.3, VORP: 0.8, PTS: 12.9, AST: 1.9, TRB: 6.1, TS: 54.6, TOV: 1.7 },
+    T:  { PER: 15.2, WS: 2.0, VORP: 1.0, PTS: 17.1, AST: 3.5, TRB: 8.5, TS: 54.7, TOV: 2.6 },
+    T2: { PER: 14.3, WS: 0.9, VORP: 0.2, PTS: 21.2, AST: 3.7, TRB: 7.2, TS: 54.4, TOV: 3.0 } },
+  { id: 121,  name: "A. Gordon",     pos: "PF", age: 21, tier: "Mid", salary: 20, contractYear: 2017,
+    T1: { PER: 17.0, WS: 5.4, VORP: 1.4, PTS: 9.2, AST: 1.6, TRB: 6.5, TS: 54.1, TOV: 0.8 },
+    T:  { PER: 14.5, WS: 3.7, VORP: 0.6, PTS: 12.7, AST: 1.9, TRB: 5.1, TS: 53.0, TOV: 1.1 },
+    T2: { PER: 16.5, WS: 2.9, VORP: 1.1, PTS: 17.6, AST: 2.3, TRB: 7.9, TS: 53.0, TOV: 1.8 } },
+  { id: 122,  name: "D. Green (TOR)",     pos: "SG", age: 31, tier: "Mid", salary: 15, contractYear: 2018,
+    T1: { PER: 10.1, WS: 3.4, VORP: 1.3, PTS: 7.3, AST: 1.8, TRB: 3.3, TS: 53.7, TOV: 1.1 },
+    T:  { PER: 11.3, WS: 2.9, VORP: 1.1, PTS: 8.6, AST: 1.6, TRB: 3.6, TS: 50.9, TOV: 1.1 },
+    T2: { PER: 13.0, WS: 5.9, VORP: 2.2, PTS: 10.3, AST: 1.6, TRB: 4.0, TS: 63.2, TOV: 0.9 } },
+  { id: 123,  name: "J. Hart",     pos: "SF", age: 27, tier: "Mid", salary: 20, contractYear: 2022,
+    T1: { PER: 12.2, WS: 2.7, VORP: 0.4, PTS: 9.2, AST: 2.3, TRB: 8.0, TS: 56.6, TOV: 1.0 },
+    T:  { PER: 16.1, WS: 4.4, VORP: 1.3, PTS: 14.9, AST: 4.1, TRB: 7.2, TS: 61.0, TOV: 2.1 },
+    T2: { PER: 14.1, WS: 6.0, VORP: 1.8, PTS: 9.8, AST: 3.8, TRB: 7.8, TS: 62.2, TOV: 1.5 } },
+  { id: 124,  name: "T. Young",     pos: "PF", age: 28, tier: "Mid", salary: 14, contractYear: 2016,
+    T1: { PER: 15.7, WS: 3.1, VORP: 1.1, PTS: 14.1, AST: 2.3, TRB: 5.4, TS: 50.7, TOV: 1.5 },
+    T:  { PER: 17.5, WS: 4.1, VORP: 1.2, PTS: 15.1, AST: 1.9, TRB: 9.0, TS: 53.3, TOV: 1.9 },
+    T2: { PER: 14.9, WS: 4.6, VORP: 1.4, PTS: 11.0, AST: 1.6, TRB: 6.1, TS: 56.2, TOV: 1.3 } },
+  { id: 125,  name: "L. Ball",     pos: "PG", age: 24, tier: "Mid", salary: 20, contractYear: 2021,
+    T1: { PER: 13.1, WS: 2.4, VORP: 1.3, PTS: 11.8, AST: 7.0, TRB: 6.1, TS: 51.7, TOV: 3.1 },
+    T:  { PER: 15.2, WS: 3.2, VORP: 1.6, PTS: 14.6, AST: 5.7, TRB: 4.8, TS: 55.1, TOV: 2.2 },
+    T2: { PER: 14.5, WS: 2.2, VORP: 1.4, PTS: 13.0, AST: 5.1, TRB: 5.4, TS: 57.5, TOV: 2.3 } },
+  { id: 126,  name: "D. Finney-Smith",     pos: "SF", age: 27, tier: "Mid", salary: 13, contractYear: 2021,
+    T1: { PER: 12.3, WS: 4.9, VORP: 0.9, PTS: 9.5, AST: 1.6, TRB: 5.7, TS: 59.5, TOV: 1.0 },
+    T:  { PER: 12.0, WS: 4.4, VORP: 1.0, PTS: 9.8, AST: 1.7, TRB: 5.4, TS: 60.9, TOV: 0.8 },
+    T2: { PER: 12.5, WS: 6.6, VORP: 1.9, PTS: 11.0, AST: 1.9, TRB: 4.7, TS: 60.4, TOV: 1.0 } },
+  { id: 127,  name: "N. Reid",     pos: "C", age: 24, tier: "Mid", salary: 14, contractYear: 2023,
+    T1: { PER: 17.2, WS: 3.2, VORP: 0.6, PTS: 8.3, AST: 0.9, TRB: 3.9, TS: 58.8, TOV: 1.1 },
+    T:  { PER: 18.5, WS: 3.0, VORP: 1.0, PTS: 11.5, AST: 1.1, TRB: 4.9, TS: 61.7, TOV: 1.4 },
+    T2: { PER: 16.0, WS: 4.9, VORP: 1.7, PTS: 13.5, AST: 1.3, TRB: 5.2, TS: 59.5, TOV: 1.4 } },
+  // id=128 L. Williams removed — wrong BBRef ID (willilo01), all stats zero
+  { id: 129,  name: "M. Morris Sr",     pos: "PF", age: 28, tier: "Low", salary: 10, contractYear: 2018,
+    T1: { PER: 13.7, WS: 4.1, VORP: 0.3, PTS: 14.0, AST: 1.7, TRB: 6.5, TS: 54.0, TOV: 1.7 },
+    T:  { PER: 13.2, WS: 3.3, VORP: 0.4, PTS: 11.5, AST: 1.9, TRB: 5.6, TS: 56.6, TOV: 1.7 },
+    T2: { PER: 11.7, WS: 1.6, VORP: -0.2, PTS: 9.4, AST: 1.4, TRB: 4.6, TS: 52.1, TOV: 0.9 } },
+  { id: 130,  name: "A. Aminu",     pos: "SF", age: 25, tier: "Low", salary: 9, contractYear: 2016,
+    T1: { PER: 14.4, WS: 3.3, VORP: 1.0, PTS: 5.6, AST: 0.8, TRB: 4.6, TS: 50.4, TOV: 0.7 },
+    T:  { PER: 12.7, WS: 4.0, VORP: 1.2, PTS: 10.2, AST: 1.7, TRB: 6.1, TS: 53.3, TOV: 1.5 },
+    T2: { PER: 11.3, WS: 1.9, VORP: 0.4, PTS: 8.7, AST: 1.6, TRB: 7.4, TS: 50.6, TOV: 1.5 } },
+  { id: 131,  name: "T. Snell",     pos: "SG", age: 24, tier: "Low", salary: 8, contractYear: 2016,
+    T1: { PER: 10.2, WS: 2.4, VORP: 0.2, PTS: 6.0, AST: 0.9, TRB: 2.4, TS: 55.0, TOV: 0.7 },
+    T:  { PER: 6.4, WS: 0.4, VORP: -0.6, PTS: 5.3, AST: 1.0, TRB: 3.1, TS: 47.8, TOV: 0.8 },
+    T2: { PER: 9.7, WS: 3.4, VORP: 0.2, PTS: 8.5, AST: 1.2, TRB: 3.1, TS: 60.3, TOV: 0.7 } },
+  { id: 132,  name: "G. Niang",     pos: "SF", age: 29, tier: "Low", salary: 11, contractYear: 2022,
+    T1: { PER: 11.4, WS: 2.6, VORP: 0.5, PTS: 6.9, AST: 0.8, TRB: 2.4, TS: 60.2, TOV: 0.7 },
+    T:  { PER: 10.7, WS: 2.8, VORP: 0.0, PTS: 9.2, AST: 1.3, TRB: 2.7, TS: 59.4, TOV: 0.8 },
+    T2: { PER: 10.9, WS: 2.5, VORP: 0.2, PTS: 8.2, AST: 1.0, TRB: 2.4, TS: 61.0, TOV: 0.7 } }
 ];
 
+// OLS regression coefficients — n=130, R²=0.138, F-test p=0.005
+// Significant features: T_PER (p=0.043), per_trend (p=0.004)
+const MODEL_COEF = {
+  const:     -3.0873,
+  T_PER:      0.1424,   // walk-year PER
+  per_trend:  0.2855,   // T_PER − T1_PER  (absolute PER rise into contract year)
+};
+
 function computeRisk(p) {
-  const perDrop  = +((p.T.PER  - p.T2.PER)  / p.T.PER  * 100).toFixed(1);
-  const tsDrop   = +((p.T.TS   - p.T2.TS)   / p.T.TS   * 100).toFixed(1);
-  const wsDrop   = +((p.T.WS   - p.T2.WS)   / p.T.WS   * 100).toFixed(1);
+  // ── Descriptive stats (historical, uses T+1 actuals) ──────────────
+  const safe     = (n, d) => d !== 0 ? n / d : 0;
+  const perDrop  = +(safe(p.T.PER  - p.T2.PER, p.T.PER)  * 100).toFixed(1);
+  const tsDrop   = +(safe(p.T.TS   - p.T2.TS,  p.T.TS)   * 100).toFixed(1);
+  const wsDrop   = +(safe(p.T.WS   - p.T2.WS,  p.T.WS)   * 100).toFixed(1);
   const ptsDiff  = +(p.T2.PTS - p.T.PTS).toFixed(1);
-  const cEffect  = +((p.T.PER  - p.T1.PER)  / p.T1.PER * 100).toFixed(1);
-  const riskScore = Math.min(100, Math.max(0, Math.round(
-    perDrop * 2.1 + tsDrop * 2.8 + (p.age > 28 ? 14 : 0) + (p.tier === "Max" ? 6 : 0) - (p.age < 25 ? 8 : 0)
-  )));
-  const riskTier = riskScore >= 55 ? "HIGH" : riskScore >= 30 ? "MED" : "LOW";
-  return { ...p, perDrop, tsDrop, wsDrop, ptsDiff, cEffect, riskScore, riskTier };
+  const cEffect  = +(safe(p.T.PER  - p.T1.PER, p.T1.PER) * 100).toFixed(1);
+
+  // ── Regression-predicted PER drop (uses only data known at signing time) ──
+  const perTrend      = p.T.PER - p.T1.PER;
+  const predictedDrop = +(
+    MODEL_COEF.const
+    + MODEL_COEF.T_PER     * p.T.PER
+    + MODEL_COEF.per_trend * perTrend
+  ).toFixed(2);
+
+  // Scale predicted drop range [−2, 4] PER pts → risk score [0, 100]
+  const riskScore = Math.min(100, Math.max(0, Math.round((predictedDrop + 2) / 6 * 100)));
+  const riskTier  = riskScore >= 55 ? "HIGH" : riskScore >= 30 ? "MED" : "LOW";
+
+  return { ...p, perDrop, tsDrop, wsDrop, ptsDiff, cEffect, predictedDrop, riskScore, riskTier };
 }
 
 const DATA = PLAYERS.map(computeRisk);
@@ -650,28 +919,36 @@ export default function App() {
   ];
 
   // Player trajectory
+  const yr = selected ? {
+    t1: `${selected.contractYear - 2}–${String(selected.contractYear - 1).slice(2)}`,
+    t:  `${selected.contractYear - 1}–${String(selected.contractYear).slice(2)}`,
+    t2: `${selected.contractYear}–${String(selected.contractYear + 1).slice(2)}`,
+  } : {};
   const trajectory = selected ? [
-    { phase: "T−1  Pre-Contract", PER: selected.T1.PER, TS: selected.T1.TS, PTS: selected.T1.PTS, WS: selected.T1.WS },
-    { phase: "T  Contract Year",  PER: selected.T.PER,  TS: selected.T.TS,  PTS: selected.T.PTS,  WS: selected.T.WS  },
-    { phase: "T+1  Payday",       PER: selected.T2.PER, TS: selected.T2.TS, PTS: selected.T2.PTS, WS: selected.T2.WS },
+    { phase: `T−1  Pre-Contract (${yr.t1})`, PER: selected.T1.PER, TS: selected.T1.TS, PTS: selected.T1.PTS, WS: selected.T1.WS },
+    { phase: `T  Contract Year (${yr.t})`,   PER: selected.T.PER,  TS: selected.T.TS,  PTS: selected.T.PTS,  WS: selected.T.WS  },
+    { phase: `T+1  Payday (${yr.t2})`,       PER: selected.T2.PER, TS: selected.T2.TS, PTS: selected.T2.PTS, WS: selected.T2.WS },
   ] : [];
 
   const radarData = selected ? [
-    { metric: "PER Drop",  value: Math.min(100, selected.perDrop * 3.5) },
-    { metric: "TS Drop",   value: Math.min(100, selected.tsDrop * 4.0) },
-    { metric: "Age Risk",  value: selected.age > 31 ? 90 : selected.age > 28 ? 60 : 25 },
-    { metric: "Tier Risk", value: selected.tier === "Max" ? 65 : selected.tier === "Mid" ? 40 : 20 },
-    { metric: "C-Effect",  value: Math.min(100, selected.cEffect * 4.5) },
+    { metric: "PER Drop",   value: Math.min(100, selected.perDrop * 3.5) },
+    { metric: "TS Drop",    value: Math.min(100, selected.tsDrop * 4.0) },
+    { metric: "Age Risk",   value: selected.age > 31 ? 90 : selected.age > 28 ? 60 : 25 },
+    { metric: "Model Pred", value: Math.min(100, Math.max(0, (selected.predictedDrop + 2) / 6 * 100)) },
+    { metric: "C-Effect",   value: Math.min(100, Math.max(0, selected.cEffect * 4.5)) },
   ] : [];
 
   function getRiskFlags(p) {
     const flags = [];
-    if (p.perDrop > 15)  flags.push({ label: "SEVERE PER REGRESSION", cls: "high" });
-    if (p.perDrop > 8)   flags.push({ label: "PER DIP DETECTED", cls: "med" });
-    if (p.tsDrop > 4)    flags.push({ label: "EFFICIENCY TRAP", cls: "high" });
-    if (p.tsDrop > 2)    flags.push({ label: "TS% DECLINE", cls: "med" });
-    if (p.age > 28)      flags.push({ label: "AGE RISK >28", cls: "high" });
-    if (p.tier === "Max" && p.perDrop > 10) flags.push({ label: "MAX CONTRACT HAZARD", cls: "high" });
+    // Model-driven flags (predictive, based on signing-time data)
+    if (p.predictedDrop > 2.0)  flags.push({ label: "MODEL: HIGH DECLINE RISK", cls: "high" });
+    else if (p.predictedDrop > 0.8) flags.push({ label: "MODEL: MODERATE DECLINE", cls: "med" });
+    // Walk-year inflation signal
+    const perTrend = p.T.PER - p.T1.PER;
+    if (perTrend > 4)   flags.push({ label: "WALK-YEAR SURGE DETECTED", cls: "high" });
+    if (p.T.PER > 25)   flags.push({ label: "PEAK PER — REGRESSION LIKELY", cls: "med" });
+    // Historical outcome flags (descriptive)
+    if (p.tsDrop > 4)   flags.push({ label: "EFFICIENCY TRAP", cls: "high" });
     if (p.ptsDiff > -1 && p.tsDrop > 2) flags.push({ label: "STAT-PADDING PATTERN", cls: "med" });
     if (p.riskScore < 25) flags.push({ label: "LOW RISK", cls: "low" });
     return flags;
@@ -902,14 +1179,21 @@ export default function App() {
                     <div className="risk-label-big">Risk Score</div>
                     <div className="risk-score-big" style={{ color: riskColor(selected.riskScore) }}>{selected.riskScore}</div>
                     <div className="risk-label-big">{selected.riskTier} RISK</div>
+                    <div style={{ fontSize: 9, color: "#4a6278", marginTop: 6, letterSpacing: 1 }}>
+                      {selected.predictedDrop > 0
+                        ? `MODEL: ↓ ${selected.predictedDrop} PER`
+                        : selected.predictedDrop < 0
+                          ? `MODEL: ↑ ${Math.abs(selected.predictedDrop)} PER`
+                          : `MODEL: → 0 PER`}
+                    </div>
                   </div>
                 </div>
 
                 <div className="detail-grid">
                   {[
-                    { label: "T−1  PRE-CONTRACT", data: selected.T1, key: "T1" },
-                    { label: "T  CONTRACT YEAR", data: selected.T, key: "T" },
-                    { label: "T+1  GUARANTEED WEALTH", data: selected.T2, key: "T2" },
+                    { label: `T−1  PRE-CONTRACT (${yr.t1})`, data: selected.T1, key: "T1" },
+                    { label: `T  CONTRACT YEAR (${yr.t})`,   data: selected.T,  key: "T"  },
+                    { label: `T+1  GUARANTEED WEALTH (${yr.t2})`, data: selected.T2, key: "T2" },
                   ].map(({ label, data, key }) => (
                     <div key={key} className="detail-phase">
                       <div className="phase-label"><span>◆</span> {label}</div>
